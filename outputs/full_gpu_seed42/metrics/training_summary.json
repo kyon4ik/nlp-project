@@ -1,0 +1,46 @@
+[
+  {
+    "model": "dense_random",
+    "checkpoint": "outputs/full_gpu_seed42/checkpoints/dense_random",
+    "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "seed": 42,
+    "device": "cuda",
+    "epochs_run": 3,
+    "selected_epoch": 1,
+    "training_seconds": 222.84917916099948,
+    "effective_batch_size": 16
+  },
+  {
+    "model": "dense_hard",
+    "checkpoint": "outputs/full_gpu_seed42/checkpoints/dense_hard",
+    "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "seed": 42,
+    "device": "cuda",
+    "epochs_run": 3,
+    "selected_epoch": 1,
+    "training_seconds": 175.7122682900008,
+    "effective_batch_size": 16
+  },
+  {
+    "model": "selector",
+    "checkpoint": "outputs/full_gpu_seed42/checkpoints/selector",
+    "base_model": "allenai/scibert_scivocab_uncased",
+    "seed": 42,
+    "device": "cuda",
+    "epochs_run": 4,
+    "selected_epoch": 3,
+    "training_seconds": 1559.6986510049974,
+    "effective_batch_size": 16
+  },
+  {
+    "model": "stance",
+    "checkpoint": "outputs/full_gpu_seed42/checkpoints/stance",
+    "base_model": "allenai/scibert_scivocab_uncased",
+    "seed": 42,
+    "device": "cuda",
+    "epochs_run": 5,
+    "selected_epoch": 3,
+    "training_seconds": 534.457967154005,
+    "effective_batch_size": 16
+  }
+]

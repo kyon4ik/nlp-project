@@ -1,0 +1,557 @@
+[
+  {
+    "claim_id": 3,
+    "claim": "1,000 genomes project enables mapping of genetic sequence variation consisting of rare variants with larger penetrance effects than common variants.",
+    "category": "Stance or document aggregation error",
+    "gold_verdict": "SUPPORT",
+    "predicted_verdict": "CONTRADICT",
+    "gold_doc_ids": [
+      14717500
+    ],
+    "retrieved_top5": [
+      14717500,
+      4414547,
+      380526,
+      461550,
+      263364
+    ],
+    "predicted_documents": [
+      {
+        "doc_id": 14717500,
+        "title": "Rare Variants Create Synthetic Genome-Wide Associations",
+        "label": "CONTRADICT",
+        "selection_score": 0.41525059938430786,
+        "stance_probability": 0.6775685548782349,
+        "stance_probabilities": {
+          "CONTRADICT": 0.6775685548782349,
+          "SUPPORT": 0.32243141531944275
+        },
+        "retrieval_score": 2.9869816303253174,
+        "evidence": [
+          {
+            "index": 6,
+            "text": "We also illustrate the behavior of synthetic associations in real datasets by showing that rare causal mutations responsible for both hearing loss and sickle cell anemia create genome-wide significant synthetic associations, in the latter case extending over a 2.5-Mb interval encompassing scores of \"blocks\" of associated variants."
+          },
+          {
+            "index": 7,
+            "text": "In conclusion, uncommon or rare genetic variants can easily create synthetic associations that are credited to common variants, and this possibility requires careful consideration in the interpretation and follow up of GWAS signals."
+          },
+          {
+            "index": 5,
+            "text": "We show that they are not only possible, but inevitable, and that under simple but reasonable genetic models, they are likely to account for or contribute to many of the recently identified signals reported in genome-wide association studies."
+          }
+        ],
+        "aggregation_score": 0.2813607485371463
+      },
+      {
+        "doc_id": 4414547,
+        "title": "Mosaic PPM1D mutations are associated with predisposition to breast and ovarian cancer",
+        "label": "CONTRADICT",
+        "selection_score": 0.4242638945579529,
+        "stance_probability": 0.6793147325515747,
+        "stance_probabilities": {
+          "CONTRADICT": 0.6793147325515747,
+          "SUPPORT": 0.32068532705307007
+        },
+        "retrieval_score": 1.4737484455108643,
+        "evidence": [
+          {
+            "index": 2,
+            "text": "Using pooled next-generation sequencing of 507 genes implicated in the repair of DNA in 1,150 samples, an analytical strategy focused on protein-truncating variants (PTVs) and a large-scale sequencing case–control replication experiment in 13,642 individuals, here we show that rare PTVs in the p53-inducible protein phosphatase PPM1D are associated with predisposition to breast cancer and ovarian cancer."
+          },
+          {
+            "index": 8,
+            "text": "More generally, these data provide new insights into the role of rare and of mosaic genetic variants in common conditions, and the use of sequencing in their identification."
+          },
+          {
+            "index": 0,
+            "text": "Improved sequencing technologies offer unprecedented opportunities for investigating the role of rare genetic variation in common disease."
+          }
+        ],
+        "aggregation_score": 0.28820871406292525
+      }
+    ],
+    "gold_rationales": [
+      {
+        "doc_id": 14717500,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          2,
+          5
+        ],
+        "text": "We propose as an alternative explanation that variants much less common than the associated one may create \"synthetic associations\" by occurring, stochastically, more often in association with one of the alleles at the common site versus the other allele. We show that they are not only possible, but inevitable, and that under simple but reasonable genetic models, they are likely to account for or contribute to many of the recently identified signals reported in genome-wide association studies."
+      },
+      {
+        "doc_id": 14717500,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          7
+        ],
+        "text": "In conclusion, uncommon or rare genetic variants can easily create synthetic associations that are credited to common variants, and this possibility requires careful consideration in the interpretation and follow up of GWAS signals."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.0
+  },
+  {
+    "claim_id": 5,
+    "claim": "1/2000 in UK have abnormal PrP positivity.",
+    "category": "Stance or document aggregation error",
+    "gold_verdict": "SUPPORT",
+    "predicted_verdict": "CONTRADICT",
+    "gold_doc_ids": [
+      13734012
+    ],
+    "retrieved_top5": [
+      13734012,
+      456304,
+      4414547,
+      103007,
+      14717500
+    ],
+    "predicted_documents": [
+      {
+        "doc_id": 13734012,
+        "title": "Prevalent abnormal prion protein in human appendixes after bovine spongiform encephalopathy epizootic: large scale survey",
+        "label": "CONTRADICT",
+        "selection_score": 0.4405248165130615,
+        "stance_probability": 0.6815280914306641,
+        "stance_probabilities": {
+          "CONTRADICT": 0.6815280914306641,
+          "SUPPORT": 0.31847190856933594
+        },
+        "retrieval_score": 0.2766968607902527,
+        "evidence": [
+          {
+            "index": 7,
+            "text": "CONCLUSIONS This study corroborates previous studies and suggests a high prevalence of infection with abnormal PrP, indicating vCJD carrier status in the population compared with the 177 vCJD cases to date."
+          },
+          {
+            "index": 4,
+            "text": "RESULTS Of the 32,441 appendix samples 16 were positive for abnormal PrP, indicating an overall prevalence of 493 per million population (95% confidence interval 282 to 801 per million)."
+          },
+          {
+            "index": 6,
+            "text": "Genetic testing of the positive specimens for the genotype at PRNP codon 129 revealed a high proportion that were valine homozygous compared with the frequency in the normal population, and in stark contrast with confirmed clinical cases of vCJD, all of which were methionine homozygous at PRNP codon 129.   \n"
+          }
+        ],
+        "aggregation_score": 0.3002300374259903
+      }
+    ],
+    "gold_rationales": [
+      {
+        "doc_id": 13734012,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          4
+        ],
+        "text": "RESULTS Of the 32,441 appendix samples 16 were positive for abnormal PrP, indicating an overall prevalence of 493 per million population (95% confidence interval 282 to 801 per million)."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.0
+  },
+  {
+    "claim_id": 48,
+    "claim": "A total of 1,000 people in the UK are asymptomatic carriers of vCJD infection.",
+    "category": "Retrieval missed every evidence document",
+    "gold_verdict": "CONTRADICT",
+    "predicted_verdict": "NOT_ENOUGH_INFO",
+    "gold_doc_ids": [
+      13734012
+    ],
+    "retrieved_top5": [
+      380526,
+      253672,
+      92308,
+      601033,
+      14717500
+    ],
+    "predicted_documents": [],
+    "gold_rationales": [
+      {
+        "doc_id": 13734012,
+        "label": "CONTRADICT",
+        "sentence_indices": [
+          4
+        ],
+        "text": "RESULTS Of the 32,441 appendix samples 16 were positive for abnormal PrP, indicating an overall prevalence of 493 per million population (95% confidence interval 282 to 801 per million)."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.0
+  },
+  {
+    "claim_id": 49,
+    "claim": "ADAR1 binds to Dicer to cleave pre-miRNA.",
+    "category": "Stance or document aggregation error",
+    "gold_verdict": "SUPPORT",
+    "predicted_verdict": "CONTRADICT",
+    "gold_doc_ids": [
+      5953485
+    ],
+    "retrieved_top5": [
+      5953485,
+      654735,
+      153744,
+      164985,
+      461550
+    ],
+    "predicted_documents": [
+      {
+        "doc_id": 5953485,
+        "title": "ADAR1 Forms a Complex with Dicer to Promote MicroRNA Processing and RNA-Induced Gene Silencing",
+        "label": "CONTRADICT",
+        "selection_score": 0.45825037360191345,
+        "stance_probability": 0.7031280994415283,
+        "stance_probabilities": {
+          "CONTRADICT": 0.7031280994415283,
+          "SUPPORT": 0.29687193036079407
+        },
+        "retrieval_score": 5.352324962615967,
+        "evidence": [
+          {
+            "index": 2,
+            "text": "Most importantly, ADAR1 increases the maximum rate (Vmax) of pre-microRNA (miRNA) cleavage by Dicer and facilitates loading of miRNA onto RNA-induced silencing complexes, identifying a new role of ADAR1 in miRNA processing and RNAi mechanisms."
+          },
+          {
+            "index": 1,
+            "text": "In this study, we investigated the interaction of the RNA editing mechanism with the RNA interference (RNAi) machinery and found that ADAR1 forms a complex with Dicer through direct protein-protein interaction."
+          },
+          {
+            "index": 3,
+            "text": "ADAR1 differentiates its functions in RNA editing and RNAi by the formation of either ADAR1/ADAR1 homodimer or Dicer/ADAR1 heterodimer complexes, respectively."
+          }
+        ],
+        "aggregation_score": 0.3222087142590837
+      }
+    ],
+    "gold_rationales": [
+      {
+        "doc_id": 5953485,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          1
+        ],
+        "text": "In this study, we investigated the interaction of the RNA editing mechanism with the RNA interference (RNAi) machinery and found that ADAR1 forms a complex with Dicer through direct protein-protein interaction."
+      },
+      {
+        "doc_id": 5953485,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          2
+        ],
+        "text": "Most importantly, ADAR1 increases the maximum rate (Vmax) of pre-microRNA (miRNA) cleavage by Dicer and facilitates loading of miRNA onto RNA-induced silencing complexes, identifying a new role of ADAR1 in miRNA processing and RNAi mechanisms."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.0
+  },
+  {
+    "claim_id": 50,
+    "claim": "AIRE is expressed in some skin tumors.",
+    "category": "Stance or document aggregation error",
+    "gold_verdict": "SUPPORT",
+    "predicted_verdict": "CONTRADICT",
+    "gold_doc_ids": [
+      12580014
+    ],
+    "retrieved_top5": [
+      12580014,
+      301838,
+      496873,
+      293661,
+      275294
+    ],
+    "predicted_documents": [
+      {
+        "doc_id": 12580014,
+        "title": "Keratin-dependent regulation of Aire and gene expression in skin tumor keratinocytes",
+        "label": "CONTRADICT",
+        "selection_score": 0.44131743907928467,
+        "stance_probability": 0.7129544019699097,
+        "stance_probabilities": {
+          "CONTRADICT": 0.7129544019699097,
+          "SUPPORT": 0.28704556822776794
+        },
+        "retrieval_score": 6.991618633270264,
+        "evidence": [
+          {
+            "index": 2,
+            "text": "The induction of Aire mRNA in keratinocytes depends on a functional interaction between K17 and the heterogeneous nuclear ribonucleoprotein hnRNP K. Further, K17 colocalizes with Aire protein in the nucleus of tumor-prone keratinocytes, and each factor is bound to a specific promoter region featuring an NF-κB consensus sequence in a relevant subset of K17- and Aire-dependent proinflammatory genes."
+          },
+          {
+            "index": 1,
+            "text": "We report that autoimmune regulator (Aire), a transcriptional regulator, is inducibly expressed in human and mouse tumor keratinocytes in a K17-dependent manner and is required for timely onset of Gli2-induced skin tumorigenesis in mice."
+          },
+          {
+            "index": 3,
+            "text": "These findings provide radically new insight into keratin intermediate filament and Aire function, along with a molecular basis for the K17-dependent amplification of inflammatory and immune responses in diseased epithelia."
+          }
+        ],
+        "aggregation_score": 0.31463921085766344
+      },
+      {
+        "doc_id": 301838,
+        "title": "Rank Signaling Links the Development of Invariant γδ T Cell Progenitors and Aire+ Medullary Epithelium",
+        "label": "CONTRADICT",
+        "selection_score": 0.41710901260375977,
+        "stance_probability": 0.6967050433158875,
+        "stance_probabilities": {
+          "CONTRADICT": 0.6967050433158875,
+          "SUPPORT": 0.30329495668411255
+        },
+        "retrieval_score": -1.2558822631835938,
+        "evidence": [
+          {
+            "index": 1,
+            "text": "Here we showed that emergence of the first cohorts of Aire(+) mTECs at this key developmental stage, prior to αβ T cell repertoire selection, was jointly directed by Rankl(+) lymphoid tissue inducer cells and invariant Vγ5(+) dendritic epidermal T cell (DETC) progenitors that are the first thymocytes to express the products of gene rearrangement."
+          },
+          {
+            "index": 2,
+            "text": "In turn, generation of Aire(+) mTECs then fostered Skint-1-dependent, but Aire-independent, DETC progenitor maturation and the emergence of an invariant DETC repertoire."
+          },
+          {
+            "index": 3,
+            "text": "Hence, our data attributed a functional importance to the temporal development of Vγ5(+) γδ T cells during thymus medulla formation for αβ T cell tolerance induction and demonstrated a Rank-mediated reciprocal link between DETC and Aire(+) mTEC maturation."
+          }
+        ],
+        "aggregation_score": 0.2906019526935495
+      }
+    ],
+    "gold_rationales": [
+      {
+        "doc_id": 12580014,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          1
+        ],
+        "text": "We report that autoimmune regulator (Aire), a transcriptional regulator, is inducibly expressed in human and mouse tumor keratinocytes in a K17-dependent manner and is required for timely onset of Gli2-induced skin tumorigenesis in mice."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.0
+  },
+  {
+    "claim_id": 53,
+    "claim": "ALDH1 expression is associated with poorer prognosis in breast cancer.",
+    "category": "Stance or document aggregation error",
+    "gold_verdict": "SUPPORT",
+    "predicted_verdict": "CONTRADICT",
+    "gold_doc_ids": [
+      45638119
+    ],
+    "retrieved_top5": [
+      45638119,
+      313403,
+      24341590,
+      4414547,
+      667451
+    ],
+    "predicted_documents": [
+      {
+        "doc_id": 45638119,
+        "title": "ALDH1 is a marker of normal and malignant human mammary stem cells and a predictor of poor clinical outcome.",
+        "label": "CONTRADICT",
+        "selection_score": 0.45400574803352356,
+        "stance_probability": 0.7127848863601685,
+        "stance_probabilities": {
+          "CONTRADICT": 0.7127848863601685,
+          "SUPPORT": 0.28721511363983154
+        },
+        "retrieval_score": 5.232185363769531,
+        "evidence": [
+          {
+            "index": 4,
+            "text": "In a series of 577 breast carcinomas, expression of ALDH1 detected by immunostaining correlated with poor prognosis."
+          },
+          {
+            "index": 3,
+            "text": "In breast carcinomas, high ALDH activity identifies the tumorigenic cell fraction, capable of self-renewal and of generating tumors that recapitulate the heterogeneity of the parental tumor."
+          },
+          {
+            "index": 1,
+            "text": "Utilizing in vitro and in vivo experimental systems, we show that normal and cancer human mammary epithelial cells with increased aldehyde dehydrogenase activity (ALDH) have stem/progenitor properties."
+          }
+        ],
+        "aggregation_score": 0.32360843551893836
+      }
+    ],
+    "gold_rationales": [
+      {
+        "doc_id": 45638119,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          4
+        ],
+        "text": "In a series of 577 breast carcinomas, expression of ALDH1 detected by immunostaining correlated with poor prognosis."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.0
+  },
+  {
+    "claim_id": 56,
+    "claim": "APOE4 expression in iPSC-derived neurons increases AlphaBeta production and tau phosphorylation causing GABA neuron degeneration.",
+    "category": "Stance or document aggregation error",
+    "gold_verdict": "SUPPORT",
+    "predicted_verdict": "CONTRADICT",
+    "gold_doc_ids": [
+      4709641
+    ],
+    "retrieved_top5": [
+      4709641,
+      21295300,
+      106301,
+      469066,
+      368506
+    ],
+    "predicted_documents": [
+      {
+        "doc_id": 4709641,
+        "title": "Gain of toxic Apolipoprotein E4 effects in Human iPSC-Derived Neurons Is Ameliorated by a Small-Molecule Structure Corrector",
+        "label": "CONTRADICT",
+        "selection_score": 0.46703606843948364,
+        "stance_probability": 0.7268578410148621,
+        "stance_probabilities": {
+          "CONTRADICT": 0.7268578410148621,
+          "SUPPORT": 0.27314215898513794
+        },
+        "retrieval_score": 5.870391368865967,
+        "evidence": [
+          {
+            "index": 5,
+            "text": "Treatment of ApoE4-expressing neurons with a small-molecule structure corrector ameliorated the detrimental effects, thus showing that correcting the pathogenic conformation of ApoE4 is a viable therapeutic approach for ApoE4-related AD."
+          },
+          {
+            "index": 1,
+            "text": "Using human neurons derived from induced pluripotent stem cells that expressed apolipoprotein E4 (ApoE4), a variant of the APOE gene product and the major genetic risk factor for AD, we demonstrated that ApoE4-expressing neurons had higher levels of tau phosphorylation, unrelated to their increased production of amyloid-β (Aβ) peptides, and that they displayed GABAergic neuron degeneration."
+          },
+          {
+            "index": 4,
+            "text": "Neurons that lacked APOE behaved similarly to those expressing ApoE3, and the introduction of ApoE4 expression recapitulated the pathological phenotypes, suggesting a gain of toxic effects from ApoE4."
+          }
+        ],
+        "aggregation_score": 0.33946882838199244
+      }
+    ],
+    "gold_rationales": [
+      {
+        "doc_id": 4709641,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          1
+        ],
+        "text": "Using human neurons derived from induced pluripotent stem cells that expressed apolipoprotein E4 (ApoE4), a variant of the APOE gene product and the major genetic risk factor for AD, we demonstrated that ApoE4-expressing neurons had higher levels of tau phosphorylation, unrelated to their increased production of amyloid-β (Aβ) peptides, and that they displayed GABAergic neuron degeneration."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.0
+  },
+  {
+    "claim_id": 70,
+    "claim": "Activation of PPM1D suppresses p53 function.",
+    "category": "Stance or document aggregation error",
+    "gold_verdict": "SUPPORT",
+    "predicted_verdict": "CONTRADICT",
+    "gold_doc_ids": [
+      4414547,
+      5956380
+    ],
+    "retrieved_top5": [
+      5956380,
+      4414547,
+      470625,
+      164189,
+      21295300
+    ],
+    "predicted_documents": [
+      {
+        "doc_id": 5956380,
+        "title": "Exome sequencing identifies somatic gain-of-function PPM1D mutations in brainstem gliomas",
+        "label": "CONTRADICT",
+        "selection_score": 0.46195515990257263,
+        "stance_probability": 0.7165564894676208,
+        "stance_probabilities": {
+          "CONTRADICT": 0.7165564894676208,
+          "SUPPORT": 0.28344348073005676
+        },
+        "retrieval_score": 2.8732988834381104,
+        "evidence": [
+          {
+            "index": 3,
+            "text": "This study led to the discovery of tumor-specific mutations in PPM1D, encoding wild-type p53-induced protein phosphatase 1D (WIP1), in 37.5% of the BSGs that harbored hallmark H3F3A mutations encoding p."
+          },
+          {
+            "index": 5,
+            "text": "PPM1D mutations were mutually exclusive with TP53 mutations in BSG and attenuated p53 activation in vitro."
+          },
+          {
+            "index": 6,
+            "text": "PPM1D mutations were truncating alterations in exon 6 that enhanced the ability of PPM1D to suppress the activation of the DNA damage response checkpoint protein CHK2."
+          }
+        ],
+        "aggregation_score": 0.3310169676712409
+      },
+      {
+        "doc_id": 4414547,
+        "title": "Mosaic PPM1D mutations are associated with predisposition to breast and ovarian cancer",
+        "label": "CONTRADICT",
+        "selection_score": 0.4783819317817688,
+        "stance_probability": 0.7225028276443481,
+        "stance_probabilities": {
+          "CONTRADICT": 0.7225028276443481,
+          "SUPPORT": 0.27749717235565186
+        },
+        "retrieval_score": 1.626118779182434,
+        "evidence": [
+          {
+            "index": 5,
+            "text": "Functional studies demonstrate that the mutations result in enhanced suppression of p53 in response to ionizing radiation exposure, suggesting that the mutant alleles encode hyperactive PPM1D isoforms."
+          },
+          {
+            "index": 2,
+            "text": "Using pooled next-generation sequencing of 507 genes implicated in the repair of DNA in 1,150 samples, an analytical strategy focused on protein-truncating variants (PTVs) and a large-scale sequencing case–control replication experiment in 13,642 individuals, here we show that rare PTVs in the p53-inducible protein phosphatase PPM1D are associated with predisposition to breast cancer and ovarian cancer."
+          },
+          {
+            "index": 3,
+            "text": "PPM1D PTV mutations were present in 25 out of 7,781 cases versus 1 out of 5,861 controls (P = 1.12 × 10−5), including 18 mutations in 6,912 individuals with breast cancer (P = 2.42 × 10−4) and 12 mutations in 1,121 individuals with ovarian cancer (P = 3.10 × 10−9)."
+          }
+        ],
+        "aggregation_score": 0.3456322984062936
+      },
+      {
+        "doc_id": 470625,
+        "title": "Identification of p18 INK4c as a tumor suppressor gene in glioblastoma multiforme.",
+        "label": "CONTRADICT",
+        "selection_score": 0.37357431650161743,
+        "stance_probability": 0.6577610969543457,
+        "stance_probabilities": {
+          "CONTRADICT": 0.6577610969543457,
+          "SUPPORT": 0.3422389030456543
+        },
+        "retrieval_score": 0.4748086929321289,
+        "evidence": [
+          {
+            "index": 6,
+            "text": "These studies identify p18(INK4c) as a GBM tumor suppressor gene, revealing an additional mechanism leading to aberrant activation of cyclin/cdk complexes in this terrible malignancy."
+          }
+        ],
+        "aggregation_score": 0.2457226522160738
+      }
+    ],
+    "gold_rationales": [
+      {
+        "doc_id": 5956380,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          5,
+          6
+        ],
+        "text": "PPM1D mutations were mutually exclusive with TP53 mutations in BSG and attenuated p53 activation in vitro. PPM1D mutations were truncating alterations in exon 6 that enhanced the ability of PPM1D to suppress the activation of the DNA damage response checkpoint protein CHK2."
+      },
+      {
+        "doc_id": 4414547,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          5
+        ],
+        "text": "Functional studies demonstrate that the mutations result in enhanced suppression of p53 in response to ionizing radiation exposure, suggesting that the mutant alleles encode hyperactive PPM1D isoforms."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.0
+  }
+]

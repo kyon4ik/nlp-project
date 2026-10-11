@@ -1,0 +1,49 @@
+{
+  "accuracy": 0.7027027027027027,
+  "macro_f1": 0.6935333273094184,
+  "per_class": {
+    "CONTRADICT": {
+      "precision": 0.5632183908045977,
+      "recall": 0.7424242424242424,
+      "f1-score": 0.6405228758169934,
+      "support": 66.0
+    },
+    "SUPPORT": {
+      "precision": 0.826530612244898,
+      "recall": 0.680672268907563,
+      "f1-score": 0.7465437788018433,
+      "support": 119.0
+    },
+    "accuracy": 0.7027027027027027,
+    "macro avg": {
+      "precision": 0.6948745015247478,
+      "recall": 0.7115482556659027,
+      "f1-score": 0.6935333273094184,
+      "support": 185.0
+    },
+    "weighted avg": {
+      "precision": 0.7325921981094395,
+      "recall": 0.7027027027027027,
+      "f1-score": 0.7087201053045455,
+      "support": 185.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      49,
+      17
+    ],
+    [
+      38,
+      81
+    ]
+  ],
+  "label_order": [
+    "CONTRADICT",
+    "SUPPORT"
+  ],
+  "examples": 185,
+  "setting": "Every complete gold rationale separately",
+  "split": "internal_validation",
+  "checkpoint": "outputs/full_gpu_seed42/checkpoints/stance"
+}

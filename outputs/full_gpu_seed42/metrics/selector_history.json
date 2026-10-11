@@ -1,0 +1,214 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.53752221305494,
+    "validation_loss": 0.34454408288002014,
+    "validation": {
+      "accuracy": 0.8488305761551626,
+      "macro_f1": 0.7171880070108664,
+      "per_class": {
+        "Not Evidence": {
+          "precision": 0.9640804597701149,
+          "recall": 0.8619139370584458,
+          "f1-score": 0.910139030179722,
+          "support": 1557.0
+        },
+        "Evidence": {
+          "precision": 0.40443213296398894,
+          "recall": 0.7448979591836735,
+          "f1-score": 0.5242369838420108,
+          "support": 196.0
+        },
+        "accuracy": 0.8488305761551626,
+        "macro avg": {
+          "precision": 0.684256296367052,
+          "recall": 0.8034059481210596,
+          "f1-score": 0.7171880070108664,
+          "support": 1753.0
+        },
+        "weighted avg": {
+          "precision": 0.9015071157575646,
+          "recall": 0.8488305761551626,
+          "f1-score": 0.8669919673832637,
+          "support": 1753.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1342,
+          215
+        ],
+        [
+          50,
+          146
+        ]
+      ],
+      "label_order": [
+        "Not Evidence",
+        "Evidence"
+      ],
+      "examples": 1753
+    },
+    "effective_batch_size": 16,
+    "elapsed_seconds": 394.08873471699917
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.269006745730256,
+    "validation_loss": 0.364591121673584,
+    "validation": {
+      "accuracy": 0.8471192241871078,
+      "macro_f1": 0.7039761872356728,
+      "per_class": {
+        "Not Evidence": {
+          "precision": 0.9554770318021202,
+          "recall": 0.8683365446371226,
+          "f1-score": 0.9098250336473755,
+          "support": 1557.0
+        },
+        "Evidence": {
+          "precision": 0.39349112426035504,
+          "recall": 0.6785714285714286,
+          "f1-score": 0.49812734082397003,
+          "support": 196.0
+        },
+        "accuracy": 0.8471192241871078,
+        "macro avg": {
+          "precision": 0.6744840780312376,
+          "recall": 0.7734539866042756,
+          "f1-score": 0.7039761872356728,
+          "support": 1753.0
+        },
+        "weighted avg": {
+          "precision": 0.8926423267945982,
+          "recall": 0.8471192241871078,
+          "f1-score": 0.8637938027327221,
+          "support": 1753.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1352,
+          205
+        ],
+        [
+          63,
+          133
+        ]
+      ],
+      "label_order": [
+        "Not Evidence",
+        "Evidence"
+      ],
+      "examples": 1753
+    },
+    "effective_batch_size": 16,
+    "elapsed_seconds": 791.5953528199971
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.1540560088765249,
+    "validation_loss": 0.3441724479198456,
+    "validation": {
+      "accuracy": 0.8921848260125499,
+      "macro_f1": 0.7395398747685813,
+      "per_class": {
+        "Not Evidence": {
+          "precision": 0.9447334200260078,
+          "recall": 0.9332048811817598,
+          "f1-score": 0.9389337641357027,
+          "support": 1557.0
+        },
+        "Evidence": {
+          "precision": 0.5162790697674419,
+          "recall": 0.5663265306122449,
+          "f1-score": 0.5401459854014599,
+          "support": 196.0
+        },
+        "accuracy": 0.8921848260125499,
+        "macro avg": {
+          "precision": 0.7305062448967248,
+          "recall": 0.7497657058970024,
+          "f1-score": 0.7395398747685813,
+          "support": 1753.0
+        },
+        "weighted avg": {
+          "precision": 0.8968286552509485,
+          "recall": 0.8921848260125499,
+          "f1-score": 0.8943459691374646,
+          "support": 1753.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1453,
+          104
+        ],
+        [
+          85,
+          111
+        ]
+      ],
+      "label_order": [
+        "Not Evidence",
+        "Evidence"
+      ],
+      "examples": 1753
+    },
+    "effective_batch_size": 16,
+    "elapsed_seconds": 1179.9767598850012
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.08291940904695393,
+    "validation_loss": 0.48011085391044617,
+    "validation": {
+      "accuracy": 0.8796349115801483,
+      "macro_f1": 0.7305224491163804,
+      "per_class": {
+        "Not Evidence": {
+          "precision": 0.9486666666666667,
+          "recall": 0.9139370584457289,
+          "f1-score": 0.9309780830879948,
+          "support": 1557.0
+        },
+        "Evidence": {
+          "precision": 0.47035573122529645,
+          "recall": 0.6071428571428571,
+          "f1-score": 0.5300668151447662,
+          "support": 196.0
+        },
+        "accuracy": 0.8796349115801483,
+        "macro avg": {
+          "precision": 0.7095111989459816,
+          "recall": 0.7605399577942931,
+          "f1-score": 0.7305224491163804,
+          "support": 1753.0
+        },
+        "weighted avg": {
+          "precision": 0.8951875204336327,
+          "recall": 0.8796349115801483,
+          "f1-score": 0.8861528643105431,
+          "support": 1753.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1423,
+          134
+        ],
+        [
+          77,
+          119
+        ]
+      ],
+      "label_order": [
+        "Not Evidence",
+        "Evidence"
+      ],
+      "examples": 1753
+    },
+    "effective_batch_size": 16,
+    "elapsed_seconds": 1559.6986510049974
+  }
+]

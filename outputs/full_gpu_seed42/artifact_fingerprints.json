@@ -1,0 +1,36 @@
+{
+  "code_sha256": {
+    "requirements.txt": "008a51961186da85dc0feeed1b58a7c8676726960ffd652fffc525afd5cd12df",
+    "README.md": "e90b45066a871b3c3c5dce5f5d85f8526b6acd05f9ac87c7deac5614ca95082a",
+    "scientific_claim_verification.ipynb": "e91f2f0ed88a3469d99a621bd8270fea6091b202709be4bde3f9e81a3f58ff70",
+    "scifact_project/__init__.py": "847b09d76879d925ff57478d1b2aa8cb045fd902aff00705aa3960b4f7706885",
+    "scifact_project/metrics.py": "1dc588f90353251b1d56dc203786545f184135a2d0d459d6f781464cd1aff0c6",
+    "scifact_project/report.py": "382bcfc4db83b4c356dc44ca610445fa83f7703b7cd19f6a74c92a38767f0443",
+    "scifact_project/retrieval.py": "d07718c713d94392967e8f77035b499fe839ddfb36048b870482eeb11d029016",
+    "scifact_project/training.py": "f3254d93649ed1dab74a1ca526ef6d0a4d3060a556143ad7459bb652290cee06",
+    "scifact_project/data.py": "4f62eae89e26e60bfa2e499368f46b214deeef97185db565f90e4931a6f3c424",
+    "scifact_project/pipeline.py": "f431df61a2fea05eedfd966c1859bf5bfcdc5ba3360d1888e76ccd113eb2bbce",
+    "scifact_project/experiment.py": "7fbf2048c6f75b0b8c1eb0cbc84e4b7118ec409558228f92f197d1adb360c7b7",
+    "scifact_project/config.py": "2936d17d356e2fa4ca358986fce38ec9836f185f2fb3fce7f57a164a76b674b0",
+    "scifact_project/model_revisions.py": "ee709972e1f5d87e437d7d7844398546c6a5d2251892bdd21b5cbb23b5c3ad56",
+    "scripts/probe_models.py": "abeceb97707c0bde57558e8dd589bb1cf50c0d8a5ac9bd733f9a1164961d8337",
+    "scripts/audit_run.py": "b59de47ef27af9109e9aa564baa1f22259c41b7918faa4d52e0810e026edbb4b",
+    "scripts/run_seeded.py": "654cd87e5c1eb4b8699c46a237c0861a48388314157b88b8e0c9eb107af43d28",
+    "scripts/execute_notebook.py": "a84d982b4c34c4de76e743414e90c0b34ceaef77dc7d4eacec3b7a946bb27fcc",
+    "scripts/build_notebook.py": "478715a7618f91e06ff937fc47b447d12d5074d6dec2547a919aba22b5b437f9",
+    "scripts/download_models.py": "78d233485113ab90e3d47366e5c1883b0132eb6b6ffe6d5d1511443e11d93d20",
+    "scripts/run_retriever_seeds.py": "fed9d90ede99a7c2db7a5162028a0894625e5fede138566466f8f96b5d2afa12",
+    "scripts/run_experiments.py": "9aea9bc68107ce6049cda508cf7ec00666f596e1ffa848ef974ee1737ce58bd5",
+    "scripts/finalize_artifacts.py": "a86d485185db056c4aa6351608bd8ee2f4a438b5edf73bc6c3c2ea777b03af34",
+    "tests/test_pipeline.py": "5b5c4128ca5a38aa087306166bcd1dbc7f7662b46256e9464a025b683672ea5c",
+    "tests/test_metrics.py": "4f7e4aa4f979af644ec1a573fccaeec631bdb66451637f26755419b216a64111"
+  },
+  "checkpoint_sha256": {
+    "outputs/full_gpu_seed42/checkpoints/stance/model.safetensors": "1537160e8247b45abae693109a87621759232abce234de9d8d536994088ade14",
+    "outputs/full_gpu_seed42/checkpoints/dense_random/model.safetensors": "89651f1b8cb82c216e3bae83d7a71f34c00390e39ed5e4004a654af2ddfea1be",
+    "outputs/full_gpu_seed42/checkpoints/dense_hard/model.safetensors": "27848d1a23d8f37a2cae6540cd8ce23ba65eb578f25ecfa4d9eb5b21293d981a",
+    "outputs/full_gpu_seed42/checkpoints/selector/model.safetensors": "e0013d27d878744b0f2f8e3fc7ca44387d14357dc5a535964cef97b67ada520b",
+    "outputs/full_gpu_seed42/checkpoints/stance_tfidf.joblib": "f3644fb99477221a0af79cb64d2526a122a70268a820c7aa1cfc9a67ec376e87"
+  },
+  "note": "Executed package versions are an environment record; choose appropriate CUDA/CPU PyTorch wheels on another machine."
+}

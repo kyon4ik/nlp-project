@@ -1,0 +1,18 @@
+[
+  {
+    "seed": 43,
+    "experiment": "dense_random",
+    "source": "Observed stderr from the GPU retriever repetition",
+    "warning": "Detected call of lr_scheduler.step() before optimizer.step().",
+    "policy": "Dynamic GradScaler may skip an optimizer update; the executed learning-rate scheduler advances by batch iteration.",
+    "note": "Copied from actual execution; no number of skipped updates was measured. All training runs use the same loop policy."
+  },
+  {
+    "seed": 44,
+    "experiment": "dense_random",
+    "source": "Observed stderr from the GPU retriever repetition",
+    "warning": "Detected call of lr_scheduler.step() before optimizer.step().",
+    "policy": "Dynamic GradScaler may skip an optimizer update; the executed learning-rate scheduler advances by batch iteration.",
+    "note": "Copied from actual execution; no number of skipped updates was measured. All training runs use the same loop policy."
+  }
+]

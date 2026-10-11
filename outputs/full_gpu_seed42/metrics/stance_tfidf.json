@@ -1,0 +1,46 @@
+{
+  "accuracy": 0.42011834319526625,
+  "macro_f1": 0.3875,
+  "per_class": {
+    "CONTRADICT": {
+      "precision": 0.2318840579710145,
+      "recall": 0.26229508196721313,
+      "f1-score": 0.24615384615384617,
+      "support": 122.0
+    },
+    "SUPPORT": {
+      "precision": 0.55,
+      "recall": 0.5092592592592593,
+      "f1-score": 0.5288461538461539,
+      "support": 216.0
+    },
+    "accuracy": 0.42011834319526625,
+    "macro avg": {
+      "precision": 0.3909420289855073,
+      "recall": 0.38577717061323624,
+      "f1-score": 0.3875,
+      "support": 338.0
+    },
+    "weighted avg": {
+      "precision": 0.4351770860132065,
+      "recall": 0.42011834319526625,
+      "f1-score": 0.42680928538916707,
+      "support": 338.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      32,
+      90
+    ],
+    [
+      106,
+      110
+    ]
+  ],
+  "label_order": [
+    "CONTRADICT",
+    "SUPPORT"
+  ],
+  "examples": 338
+}

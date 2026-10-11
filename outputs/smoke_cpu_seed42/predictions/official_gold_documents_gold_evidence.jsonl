@@ -1,0 +1,16 @@
+{"id": 1, "evidence": {}}
+{"id": 3, "evidence": {"14717500": {"label": "CONTRADICT", "sentences": [7]}}}
+{"id": 5, "evidence": {"13734012": {"label": "CONTRADICT", "sentences": [4]}}}
+{"id": 13, "evidence": {}}
+{"id": 36, "evidence": {}}
+{"id": 42, "evidence": {"18174210": {"label": "SUPPORT", "sentences": [10]}}}
+{"id": 48, "evidence": {"13734012": {"label": "CONTRADICT", "sentences": [4]}}}
+{"id": 49, "evidence": {"5953485": {"label": "SUPPORT", "sentences": [1]}}}
+{"id": 50, "evidence": {"12580014": {"label": "SUPPORT", "sentences": [1]}}}
+{"id": 51, "evidence": {"45638119": {"label": "SUPPORT", "sentences": [4]}}}
+{"id": 53, "evidence": {"45638119": {"label": "SUPPORT", "sentences": [4]}}}
+{"id": 54, "evidence": {"49556906": {"label": "SUPPORT", "sentences": [5]}}}
+{"id": 56, "evidence": {"4709641": {"label": "CONTRADICT", "sentences": [1]}}}
+{"id": 57, "evidence": {"4709641": {"label": "CONTRADICT", "sentences": [1]}}}
+{"id": 70, "evidence": {"4414547": {"label": "SUPPORT", "sentences": [5]}, "5956380": {"label": "SUPPORT", "sentences": [5, 6]}}}
+{"id": 72, "evidence": {}}

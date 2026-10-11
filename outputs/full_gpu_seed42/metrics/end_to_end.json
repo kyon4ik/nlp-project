@@ -1,0 +1,422 @@
+{
+  "predicted_all": {
+    "accuracy": 0.59,
+    "macro_f1": 0.5530913275447222,
+    "per_class": {
+      "CONTRADICT": {
+        "precision": 0.38596491228070173,
+        "recall": 0.34375,
+        "f1-score": 0.36363636363636365,
+        "support": 64.0
+      },
+      "SUPPORT": {
+        "precision": 0.6016949152542372,
+        "recall": 0.5725806451612904,
+        "f1-score": 0.5867768595041323,
+        "support": 124.0
+      },
+      "NOT_ENOUGH_INFO": {
+        "precision": 0.672,
+        "recall": 0.75,
+        "f1-score": 0.7088607594936709,
+        "support": 112.0
+      },
+      "accuracy": 0.59,
+      "macro avg": {
+        "precision": 0.5532199425116463,
+        "recall": 0.5554435483870969,
+        "f1-score": 0.5530913275447222,
+        "support": 300.0
+      },
+      "weighted avg": {
+        "precision": 0.5819197462583011,
+        "recall": 0.59,
+        "f1-score": 0.584751543048436,
+        "support": 300.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        22,
+        24,
+        18
+      ],
+      [
+        30,
+        71,
+        23
+      ],
+      [
+        5,
+        23,
+        84
+      ]
+    ],
+    "label_order": [
+      "CONTRADICT",
+      "SUPPORT",
+      "NOT_ENOUGH_INFO"
+    ],
+    "examples": 300,
+    "official": {
+      "sentence_selection": {
+        "precision": 0.39293598233995586,
+        "recall": 0.48633879781420764,
+        "f1": 0.4346764346764347
+      },
+      "sentence_label": {
+        "precision": 0.2229580573951435,
+        "recall": 0.27595628415300544,
+        "f1": 0.24664224664224663
+      },
+      "abstract_label_only": {
+        "precision": 0.32234432234432236,
+        "recall": 0.42105263157894735,
+        "f1": 0.3651452282157676
+      },
+      "abstract_rationalized": {
+        "precision": 0.2857142857142857,
+        "recall": 0.37320574162679426,
+        "f1": 0.32365145228215764
+      }
+    },
+    "oracle_documents": false,
+    "oracle_evidence": false
+  },
+  "gold_documents": {
+    "accuracy": 0.68,
+    "macro_f1": 0.6285654977647545,
+    "per_class": {
+      "CONTRADICT": {
+        "precision": 0.43859649122807015,
+        "recall": 0.390625,
+        "f1-score": 0.4132231404958678,
+        "support": 64.0
+      },
+      "SUPPORT": {
+        "precision": 0.7204301075268817,
+        "recall": 0.5403225806451613,
+        "f1-score": 0.6175115207373272,
+        "support": 124.0
+      },
+      "NOT_ENOUGH_INFO": {
+        "precision": 0.7466666666666667,
+        "recall": 1.0,
+        "f1-score": 0.8549618320610687,
+        "support": 112.0
+      },
+      "accuracy": 0.68,
+      "macro avg": {
+        "precision": 0.6352310884738729,
+        "recall": 0.6436491935483871,
+        "f1-score": 0.6285654977647545,
+        "support": 300.0
+      },
+      "weighted avg": {
+        "precision": 0.6701005847953216,
+        "recall": 0.68,
+        "f1-score": 0.6625781158466794,
+        "support": 300.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        25,
+        26,
+        13
+      ],
+      [
+        32,
+        67,
+        25
+      ],
+      [
+        0,
+        0,
+        112
+      ]
+    ],
+    "label_order": [
+      "CONTRADICT",
+      "SUPPORT",
+      "NOT_ENOUGH_INFO"
+    ],
+    "examples": 300,
+    "official": {
+      "sentence_selection": {
+        "precision": 0.704225352112676,
+        "recall": 0.546448087431694,
+        "f1": 0.6153846153846153
+      },
+      "sentence_label": {
+        "precision": 0.39436619718309857,
+        "recall": 0.30601092896174864,
+        "f1": 0.3446153846153846
+      },
+      "abstract_label_only": {
+        "precision": 0.6073619631901841,
+        "recall": 0.47368421052631576,
+        "f1": 0.5322580645161291
+      },
+      "abstract_rationalized": {
+        "precision": 0.5337423312883436,
+        "recall": 0.41626794258373206,
+        "f1": 0.46774193548387094
+      }
+    },
+    "oracle_documents": true,
+    "oracle_evidence": false
+  },
+  "gold_documents_gold_evidence": {
+    "accuracy": 0.79,
+    "macro_f1": 0.7483346613545816,
+    "per_class": {
+      "CONTRADICT": {
+        "precision": 0.5081967213114754,
+        "recall": 0.484375,
+        "f1-score": 0.496,
+        "support": 64.0
+      },
+      "SUPPORT": {
+        "precision": 0.7401574803149606,
+        "recall": 0.7580645161290323,
+        "f1-score": 0.749003984063745,
+        "support": 124.0
+      },
+      "NOT_ENOUGH_INFO": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 112.0
+      },
+      "accuracy": 0.79,
+      "macro avg": {
+        "precision": 0.7494514005421453,
+        "recall": 0.7474798387096774,
+        "f1-score": 0.7483346613545816,
+        "support": 300.0
+      },
+      "weighted avg": {
+        "precision": 0.7876803924099652,
+        "recall": 0.79,
+        "f1-score": 0.7887349800796812,
+        "support": 300.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        31,
+        33,
+        0
+      ],
+      [
+        30,
+        94,
+        0
+      ],
+      [
+        0,
+        0,
+        112
+      ]
+    ],
+    "label_order": [
+      "CONTRADICT",
+      "SUPPORT",
+      "NOT_ENOUGH_INFO"
+    ],
+    "examples": 300,
+    "official": {
+      "sentence_selection": {
+        "precision": 1.0,
+        "recall": 0.6147540983606558,
+        "f1": 0.7614213197969544
+      },
+      "sentence_label": {
+        "precision": 0.6488888888888888,
+        "recall": 0.3989071038251366,
+        "f1": 0.494077834179357
+      },
+      "abstract_label_only": {
+        "precision": 0.645933014354067,
+        "recall": 0.645933014354067,
+        "f1": 0.645933014354067
+      },
+      "abstract_rationalized": {
+        "precision": 0.645933014354067,
+        "recall": 0.645933014354067,
+        "f1": 0.645933014354067
+      }
+    },
+    "oracle_documents": true,
+    "oracle_evidence": true
+  },
+  "bm25_predicted": {
+    "accuracy": 0.61,
+    "macro_f1": 0.5785187648951561,
+    "per_class": {
+      "CONTRADICT": {
+        "precision": 0.390625,
+        "recall": 0.390625,
+        "f1-score": 0.390625,
+        "support": 64.0
+      },
+      "SUPPORT": {
+        "precision": 0.616,
+        "recall": 0.6209677419354839,
+        "f1-score": 0.6184738955823293,
+        "support": 124.0
+      },
+      "NOT_ENOUGH_INFO": {
+        "precision": 0.7297297297297297,
+        "recall": 0.7232142857142857,
+        "f1-score": 0.726457399103139,
+        "support": 112.0
+      },
+      "accuracy": 0.61,
+      "macro avg": {
+        "precision": 0.5787849099099099,
+        "recall": 0.5782690092165899,
+        "f1-score": 0.5785187648951561,
+        "support": 300.0
+      },
+      "weighted avg": {
+        "precision": 0.610379099099099,
+        "recall": 0.61,
+        "f1-score": 0.610179972505868,
+        "support": 300.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        25,
+        24,
+        15
+      ],
+      [
+        32,
+        77,
+        15
+      ],
+      [
+        7,
+        24,
+        81
+      ]
+    ],
+    "label_order": [
+      "CONTRADICT",
+      "SUPPORT",
+      "NOT_ENOUGH_INFO"
+    ],
+    "examples": 300,
+    "official": {
+      "sentence_selection": {
+        "precision": 0.35412474849094566,
+        "recall": 0.4808743169398907,
+        "f1": 0.4078794901506373
+      },
+      "sentence_label": {
+        "precision": 0.20925553319919518,
+        "recall": 0.28415300546448086,
+        "f1": 0.24101969872537657
+      },
+      "abstract_label_only": {
+        "precision": 0.2903225806451613,
+        "recall": 0.430622009569378,
+        "f1": 0.346820809248555
+      },
+      "abstract_rationalized": {
+        "precision": 0.25806451612903225,
+        "recall": 0.3827751196172249,
+        "f1": 0.30828516377649323
+      }
+    },
+    "oracle_documents": false,
+    "oracle_evidence": false
+  },
+  "hybrid_without_reranking": {
+    "accuracy": 0.5966666666666667,
+    "macro_f1": 0.557729190640583,
+    "per_class": {
+      "CONTRADICT": {
+        "precision": 0.38596491228070173,
+        "recall": 0.34375,
+        "f1-score": 0.36363636363636365,
+        "support": 64.0
+      },
+      "SUPPORT": {
+        "precision": 0.6106194690265486,
+        "recall": 0.5564516129032258,
+        "f1-score": 0.5822784810126582,
+        "support": 124.0
+      },
+      "NOT_ENOUGH_INFO": {
+        "precision": 0.676923076923077,
+        "recall": 0.7857142857142857,
+        "f1-score": 0.7272727272727273,
+        "support": 112.0
+      },
+      "accuracy": 0.5966666666666667,
+      "macro avg": {
+        "precision": 0.5578358194101091,
+        "recall": 0.5619719662058372,
+        "f1-score": 0.557729190640583,
+        "support": 300.0
+      },
+      "weighted avg": {
+        "precision": 0.5874465105354718,
+        "recall": 0.5966666666666667,
+        "f1-score": 0.5897660145761411,
+        "support": 300.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        22,
+        25,
+        17
+      ],
+      [
+        30,
+        69,
+        25
+      ],
+      [
+        5,
+        19,
+        88
+      ]
+    ],
+    "label_order": [
+      "CONTRADICT",
+      "SUPPORT",
+      "NOT_ENOUGH_INFO"
+    ],
+    "examples": 300,
+    "official": {
+      "sentence_selection": {
+        "precision": 0.41371158392434987,
+        "recall": 0.4781420765027322,
+        "f1": 0.4435994930291508
+      },
+      "sentence_label": {
+        "precision": 0.23167848699763594,
+        "recall": 0.2677595628415301,
+        "f1": 0.24841571609632448
+      },
+      "abstract_label_only": {
+        "precision": 0.3413654618473896,
+        "recall": 0.40669856459330145,
+        "f1": 0.3711790393013101
+      },
+      "abstract_rationalized": {
+        "precision": 0.30522088353413657,
+        "recall": 0.36363636363636365,
+        "f1": 0.331877729257642
+      }
+    },
+    "oracle_documents": false,
+    "oracle_evidence": false
+  }
+}

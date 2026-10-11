@@ -1,0 +1,85 @@
+{
+  "data": {
+    "status": "completed",
+    "details": {
+      "corpus": 5183,
+      "train": 656,
+      "validation": 151,
+      "dev": 300
+    }
+  },
+  "bm25": {
+    "status": "completed",
+    "details": null
+  },
+  "pretrained_dense": {
+    "status": "completed",
+    "details": null
+  },
+  "dense_random": {
+    "status": "completed",
+    "details": null
+  },
+  "dense_hard": {
+    "status": "completed",
+    "details": null
+  },
+  "hybrid": {
+    "status": "completed",
+    "details": {
+      "dense_mode": "hard",
+      "hybrid_name": "hybrid_hard",
+      "rrf_constant": 10,
+      "rrf_weight": 0.5,
+      "dense_embeddings_path": "outputs/full_gpu_seed42/cache/corpus_hard_0a005fb851ff1109.npy",
+      "sentence_threshold": 0.85,
+      "stance_threshold": 0.5,
+      "document_threshold": 0.0,
+      "validation_official_abstract_f1": 0.334841628959276,
+      "validation_claim_macro_f1": 0.526806199372571,
+      "tuning_split": "internal_validation_only"
+    }
+  },
+  "reranking": {
+    "status": "completed",
+    "details": null
+  },
+  "supervised": {
+    "status": "completed",
+    "details": {
+      "selector_epochs_run": 4,
+      "stance_epochs_run": 5
+    }
+  },
+  "final_evaluation": {
+    "status": "completed",
+    "details": {
+      "selection": {
+        "dense_mode": "hard",
+        "hybrid_name": "hybrid_hard",
+        "rrf_constant": 10,
+        "rrf_weight": 0.5,
+        "dense_embeddings_path": "outputs/full_gpu_seed42/cache/corpus_hard_0a005fb851ff1109.npy",
+        "sentence_threshold": 0.85,
+        "stance_threshold": 0.5,
+        "document_threshold": 0.0,
+        "validation_official_abstract_f1": 0.334841628959276,
+        "validation_claim_macro_f1": 0.526806199372571,
+        "tuning_split": "internal_validation_only"
+      }
+    }
+  },
+  "specter2": {
+    "status": "completed",
+    "details": {
+      "adapter_device_fix": "Both adapters loaded before complete-model device transfer"
+    }
+  },
+  "study": {
+    "status": "completed",
+    "details": {
+      "execution_seconds_this_invocation": 3417.6077523030035,
+      "smoke_only": false
+    }
+  }
+}

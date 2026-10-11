@@ -1,0 +1,19 @@
+{
+  "data": {
+    "status": "completed",
+    "details": {
+      "corpus": 5183,
+      "train": 656,
+      "validation": 151,
+      "dev": 300
+    }
+  },
+  "bm25": {
+    "status": "completed",
+    "details": null
+  },
+  "pretrained_dense": {
+    "status": "completed",
+    "details": null
+  }
+}

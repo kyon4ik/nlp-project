@@ -1,0 +1,28 @@
+[
+  {
+    "left": "bm25_title_abstract",
+    "right": "hybrid_reranked",
+    "metric": "MRR@10",
+    "mean_difference": 0.07199214792299899,
+    "percentile_95_ci": [
+      0.028856349455454913,
+      0.114913135020717
+    ],
+    "resamples": 2000,
+    "clusters": 164,
+    "interpretation": "Citation-family cluster sampling uncertainty; not between-training-seed variance"
+  },
+  {
+    "left": "dense_random",
+    "right": "dense_hard",
+    "metric": "MRR@10",
+    "mean_difference": 0.005705420466058765,
+    "percentile_95_ci": [
+      -0.021908936450884375,
+      0.03003792769475214
+    ],
+    "resamples": 2000,
+    "clusters": 164,
+    "interpretation": "Citation-family cluster sampling uncertainty; not between-training-seed variance"
+  }
+]

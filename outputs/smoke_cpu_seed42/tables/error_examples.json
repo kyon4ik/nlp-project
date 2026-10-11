@@ -1,0 +1,320 @@
+[
+  {
+    "claim_id": 3,
+    "claim": "1,000 genomes project enables mapping of genetic sequence variation consisting of rare variants with larger penetrance effects than common variants.",
+    "category": "Correct claim verdict but incomplete/wrong rationale or document",
+    "gold_verdict": "SUPPORT",
+    "predicted_verdict": "SUPPORT",
+    "gold_doc_ids": [
+      14717500
+    ],
+    "retrieved_top5": [
+      14717500,
+      4414547,
+      380526,
+      461550,
+      263364
+    ],
+    "predicted_documents": [
+      {
+        "doc_id": 14717500,
+        "title": "Rare Variants Create Synthetic Genome-Wide Associations",
+        "label": "SUPPORT",
+        "selection_score": 0.49901050329208374,
+        "stance_probability": 0.5075474977493286,
+        "stance_probabilities": {
+          "CONTRADICT": 0.492452472448349,
+          "SUPPORT": 0.5075474977493286
+        },
+        "retrieval_score": 2.4460225105285645,
+        "evidence": [
+          {
+            "index": 5,
+            "text": "We show that they are not only possible, but inevitable, and that under simple but reasonable genetic models, they are likely to account for or contribute to many of the recently identified signals reported in genome-wide association studies."
+          },
+          {
+            "index": 4,
+            "text": "Here, we use simple computer simulations to show the conditions under which such synthetic associations will arise and how they may be recognized."
+          },
+          {
+            "index": 6,
+            "text": "We also illustrate the behavior of synthetic associations in real datasets by showing that rare causal mutations responsible for both hearing loss and sickle cell anemia create genome-wide significant synthetic associations, in the latter case extending over a 2.5-Mb interval encompassing scores of \"blocks\" of associated variants."
+          }
+        ],
+        "aggregation_score": 0.2532715322965302
+      },
+      {
+        "doc_id": 4414547,
+        "title": "Mosaic PPM1D mutations are associated with predisposition to breast and ovarian cancer",
+        "label": "SUPPORT",
+        "selection_score": 0.5046177506446838,
+        "stance_probability": 0.5049012899398804,
+        "stance_probabilities": {
+          "CONTRADICT": 0.49509871006011963,
+          "SUPPORT": 0.5049012899398804
+        },
+        "retrieval_score": 0.5083150863647461,
+        "evidence": [
+          {
+            "index": 5,
+            "text": "Functional studies demonstrate that the mutations result in enhanced suppression of p53 in response to ionizing radiation exposure, suggesting that the mutant alleles encode hyperactive PPM1D isoforms."
+          },
+          {
+            "index": 1,
+            "text": "However, there are considerable challenges with respect to study design, data analysis and replication."
+          },
+          {
+            "index": 3,
+            "text": "PPM1D PTV mutations were present in 25 out of 7,781 cases versus 1 out of 5,861 controls (P = 1.12 × 10−5), including 18 mutations in 6,912 individuals with breast cancer (P = 2.42 × 10−4) and 12 mutations in 1,121 individuals with ovarian cancer (P = 3.10 × 10−9)."
+          }
+        ],
+        "aggregation_score": 0.25478215322706177
+      }
+    ],
+    "gold_rationales": [
+      {
+        "doc_id": 14717500,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          2,
+          5
+        ],
+        "text": "We propose as an alternative explanation that variants much less common than the associated one may create \"synthetic associations\" by occurring, stochastically, more often in association with one of the alleles at the common site versus the other allele. We show that they are not only possible, but inevitable, and that under simple but reasonable genetic models, they are likely to account for or contribute to many of the recently identified signals reported in genome-wide association studies."
+      },
+      {
+        "doc_id": 14717500,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          7
+        ],
+        "text": "In conclusion, uncommon or rare genetic variants can easily create synthetic associations that are credited to common variants, and this possibility requires careful consideration in the interpretation and follow up of GWAS signals."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.0
+  },
+  {
+    "claim_id": 36,
+    "claim": "A deficiency of vitamin B12 increases blood levels of homocysteine.",
+    "category": "Evidence predicted for an unannotated/NEI claim",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "predicted_verdict": "SUPPORT",
+    "gold_doc_ids": [],
+    "retrieved_top5": [
+      33409100,
+      11705328,
+      18174210,
+      520579,
+      275294
+    ],
+    "predicted_documents": [
+      {
+        "doc_id": 33409100,
+        "title": "Effect of homocysteine lowering on mortality and vascular disease in advanced chronic kidney disease and end-stage renal disease: a randomized controlled trial.",
+        "label": "SUPPORT",
+        "selection_score": 0.4868614077568054,
+        "stance_probability": 0.5030807852745056,
+        "stance_probabilities": {
+          "CONTRADICT": 0.4969192445278168,
+          "SUPPORT": 0.5030807852745056
+        },
+        "retrieval_score": 2.762967348098755,
+        "evidence": [
+          {
+            "index": 9,
+            "text": "It was lowered 6.3 micromol/L (25.8%; P < .001) in the vitamin group and 0.4 micromol/L (1.7%; P = .14) in the placebo group at 3 months, but there was no significant effect on mortality (448 vitamin group deaths vs 436 placebo group deaths) (hazard ratio [HR], 1.04; 95% CI, 0.91-1.18)."
+          },
+          {
+            "index": 8,
+            "text": "RESULTS Mean baseline homocysteine level was 24.0 micromol/L in the vitamin group and 24.2 micromol/L in the placebo group."
+          },
+          {
+            "index": 4,
+            "text": "Median follow-up was 3.2 years for 2056 participants aged 21 years or older with advanced chronic kidney disease (estimated creatinine clearance < or =30 mL/min) (n = 1305) or end-stage renal disease (n = 751) and high homocysteine levels (> or = 15 micromol/L).   \n"
+          }
+        ],
+        "aggregation_score": 0.24493061933414495
+      },
+      {
+        "doc_id": 11705328,
+        "title": "Randomized trial of folic acid supplementation and serum homocysteine levels.",
+        "label": "SUPPORT",
+        "selection_score": 0.4871268570423126,
+        "stance_probability": 0.508791983127594,
+        "stance_probabilities": {
+          "CONTRADICT": 0.49120795726776123,
+          "SUPPORT": 0.508791983127594
+        },
+        "retrieval_score": 0.04508870840072632,
+        "evidence": [
+          {
+            "index": 4,
+            "text": "RESULTS Median serum homocysteine level decreased with increasing folic acid dosage, to a maximum at 0.8 mg of folic acid per day, when the homocysteine reduction (placebo adjusted) was 2.7 micromol/L (23%), similar to the known effect of folic acid dosages of 1 mg/d and above."
+          },
+          {
+            "index": 6,
+            "text": "Serum folate level increased approximately linearly (5.5 nmol/L for every 0.1 mg of folic acid)."
+          },
+          {
+            "index": 9,
+            "text": "Current US food fortification levels will achieve only a small proportion of the achievable homocysteine reduction."
+          }
+        ],
+        "aggregation_score": 0.24784623962927022
+      }
+    ],
+    "gold_rationales": [],
+    "official_abstract_f1_for_claim": 0.0
+  },
+  {
+    "claim_id": 42,
+    "claim": "A high microerythrocyte count raises vulnerability to severe anemia in homozygous alpha (+)- thalassemia trait subjects.",
+    "category": "Stance or document aggregation error",
+    "gold_verdict": "CONTRADICT",
+    "predicted_verdict": "SUPPORT",
+    "gold_doc_ids": [
+      18174210
+    ],
+    "retrieved_top5": [
+      18174210,
+      33409100,
+      56893404,
+      11705328,
+      663464
+    ],
+    "predicted_documents": [
+      {
+        "doc_id": 18174210,
+        "title": "Increased Microerythrocyte Count in Homozygous α+-Thalassaemia Contributes to Protection against Severe Malarial Anaemia",
+        "label": "SUPPORT",
+        "selection_score": 0.4935028553009033,
+        "stance_probability": 0.5116750001907349,
+        "stance_probabilities": {
+          "CONTRADICT": 0.48832497000694275,
+          "SUPPORT": 0.5116750001907349
+        },
+        "retrieval_score": 6.468706130981445,
+        "evidence": [
+          {
+            "index": 7,
+            "text": "This model predicted that children homozygous for alpha(+)-thalassaemia lose less Hb than children of normal genotype for a reduction in erythrocyte count of >1.1 x 10(12)/l as a result of the reduced mean cell Hb in homozygous alpha(+)-thalassaemia."
+          },
+          {
+            "index": 5,
+            "text": "We observed a reduction in median erythrocyte count of approximately 1.5 x 10(12)/l in all children with acute falciparum malaria relative to values in community children (p < 0.001)."
+          },
+          {
+            "index": 4,
+            "text": "METHODS AND FINDINGS Data from children living on the north coast of Papua New Guinea who had participated in a case-control study of the protection afforded by alpha(+)-thalassaemia against severe malaria were reanalysed to assess the genotype-specific reduction in erythrocyte count and Hb levels associated with acute malarial disease."
+          }
+        ],
+        "aggregation_score": 0.2525130735802179
+      }
+    ],
+    "gold_rationales": [
+      {
+        "doc_id": 18174210,
+        "label": "CONTRADICT",
+        "sentence_indices": [
+          1,
+          9
+        ],
+        "text": "Individuals homozygous for alpha(+)-thalassaemia have microcytosis and an increased erythrocyte count. We estimated that the haematological profile in children homozygous for alpha(+)-thalassaemia reduces the risk of SMA during acute malaria compared to children of normal genotype (relative risk 0.52; 95% confidence interval [CI] 0.24-1.12, p = 0.09).   \n"
+      },
+      {
+        "doc_id": 18174210,
+        "label": "CONTRADICT",
+        "sentence_indices": [
+          10
+        ],
+        "text": "CONCLUSIONS The increased erythrocyte count and microcytosis in children homozygous for alpha(+)-thalassaemia may contribute substantially to their protection against SMA."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.0
+  },
+  {
+    "claim_id": 48,
+    "claim": "A total of 1,000 people in the UK are asymptomatic carriers of vCJD infection.",
+    "category": "Incorrect abstention after retrieval",
+    "gold_verdict": "CONTRADICT",
+    "predicted_verdict": "NOT_ENOUGH_INFO",
+    "gold_doc_ids": [
+      13734012
+    ],
+    "retrieved_top5": [
+      13734012,
+      253672,
+      601033,
+      380526,
+      14717500
+    ],
+    "predicted_documents": [],
+    "gold_rationales": [
+      {
+        "doc_id": 13734012,
+        "label": "CONTRADICT",
+        "sentence_indices": [
+          4
+        ],
+        "text": "RESULTS Of the 32,441 appendix samples 16 were positive for abnormal PrP, indicating an overall prevalence of 493 per million population (95% confidence interval 282 to 801 per million)."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.0
+  },
+  {
+    "claim_id": 5,
+    "claim": "1/2000 in UK have abnormal PrP positivity.",
+    "category": "Correct claim verdict but incomplete/wrong rationale or document",
+    "gold_verdict": "SUPPORT",
+    "predicted_verdict": "SUPPORT",
+    "gold_doc_ids": [
+      13734012
+    ],
+    "retrieved_top5": [
+      13734012,
+      323335,
+      4414547,
+      14717500,
+      70490
+    ],
+    "predicted_documents": [
+      {
+        "doc_id": 13734012,
+        "title": "Prevalent abnormal prion protein in human appendixes after bovine spongiform encephalopathy epizootic: large scale survey",
+        "label": "SUPPORT",
+        "selection_score": 0.49301236867904663,
+        "stance_probability": 0.5019334554672241,
+        "stance_probabilities": {
+          "CONTRADICT": 0.4980664849281311,
+          "SUPPORT": 0.5019334554672241
+        },
+        "retrieval_score": -0.4422983229160309,
+        "evidence": [
+          {
+            "index": 5,
+            "text": "The prevalence in those born in 1941-60 (733 per million, 269 to 1596 per million) did not differ significantly from those born between 1961 and 1985 (412 per million, 198 to 758 per million) and was similar in both sexes and across the three broad geographical areas sampled."
+          },
+          {
+            "index": 7,
+            "text": "CONCLUSIONS This study corroborates previous studies and suggests a high prevalence of infection with abnormal PrP, indicating vCJD carrier status in the population compared with the 177 vCJD cases to date."
+          },
+          {
+            "index": 6,
+            "text": "Genetic testing of the positive specimens for the genotype at PRNP codon 129 revealed a high proportion that were valine homozygous compared with the frequency in the normal population, and in stark contrast with confirmed clinical cases of vCJD, all of which were methionine homozygous at PRNP codon 129.   \n"
+          }
+        ],
+        "aggregation_score": 0.24745940179915493
+      }
+    ],
+    "gold_rationales": [
+      {
+        "doc_id": 13734012,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          4
+        ],
+        "text": "RESULTS Of the 32,441 appendix samples 16 were positive for abnormal PrP, indicating an overall prevalence of 493 per million population (95% confidence interval 282 to 801 per million)."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.0
+  }
+]

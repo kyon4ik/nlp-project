@@ -1,0 +1,4 @@
+model_setting,accuracy,macro_f1,examples,coverage
+TF-IDF + logistic regression (gold rationale),0.42011834319526625,0.3875,338,1.0
+Trained transformer (gold rationale),0.6153846153846154,0.5874178403755869,338,1.0
+"Trained transformer (predicted evidence, conditional)",0.6073619631901841,0.57496740547588,163,0.7799043062200957

@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+.cache/
+data/raw/
+outputs/*/checkpoints/
+outputs/*/cache/
+*.log
+.idea

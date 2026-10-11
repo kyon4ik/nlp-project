@@ -1,0 +1,55 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.719559879721822,
+    "validation_loss": 0.5456940531730652,
+    "validation": {
+      "accuracy": 0.7623762376237624,
+      "macro_f1": 0.43258426966292135,
+      "per_class": {
+        "Not Evidence": {
+          "precision": 0.7623762376237624,
+          "recall": 1.0,
+          "f1-score": 0.8651685393258427,
+          "support": 77.0
+        },
+        "Evidence": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 24.0
+        },
+        "accuracy": 0.7623762376237624,
+        "macro avg": {
+          "precision": 0.3811881188118812,
+          "recall": 0.5,
+          "f1-score": 0.43258426966292135,
+          "support": 101.0
+        },
+        "weighted avg": {
+          "precision": 0.5812175276933633,
+          "recall": 0.7623762376237624,
+          "f1-score": 0.659583935921682,
+          "support": 101.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          77,
+          0
+        ],
+        [
+          24,
+          0
+        ]
+      ],
+      "label_order": [
+        "Not Evidence",
+        "Evidence"
+      ],
+      "examples": 101
+    },
+    "effective_batch_size": 4,
+    "elapsed_seconds": 32.019951242997195
+  }
+]

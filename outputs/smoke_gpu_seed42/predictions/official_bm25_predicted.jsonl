@@ -1,0 +1,16 @@
+{"id": 1, "evidence": {}}
+{"id": 3, "evidence": {"14717500": {"label": "CONTRADICT", "sentences": [6, 7, 5]}, "4414547": {"label": "CONTRADICT", "sentences": [2, 8, 0]}}}
+{"id": 5, "evidence": {"13734012": {"label": "CONTRADICT", "sentences": [7, 4, 6]}}}
+{"id": 13, "evidence": {}}
+{"id": 36, "evidence": {}}
+{"id": 42, "evidence": {"18174210": {"label": "CONTRADICT", "sentences": [9, 10, 8]}}}
+{"id": 48, "evidence": {"13734012": {"label": "CONTRADICT", "sentences": [7, 6, 0]}}}
+{"id": 49, "evidence": {"5953485": {"label": "CONTRADICT", "sentences": [2, 1, 3]}}}
+{"id": 50, "evidence": {"12580014": {"label": "CONTRADICT", "sentences": [2, 1, 3]}, "301838": {"label": "CONTRADICT", "sentences": [1, 2, 3]}}}
+{"id": 51, "evidence": {"45638119": {"label": "CONTRADICT", "sentences": [4, 3, 1]}}}
+{"id": 53, "evidence": {"45638119": {"label": "CONTRADICT", "sentences": [4, 3, 1]}}}
+{"id": 54, "evidence": {"49556906": {"label": "CONTRADICT", "sentences": [6, 4, 5]}}}
+{"id": 56, "evidence": {"4709641": {"label": "CONTRADICT", "sentences": [5, 1, 4]}, "665817": {"label": "SUPPORT", "sentences": [7, 4, 6]}}}
+{"id": 57, "evidence": {"4709641": {"label": "CONTRADICT", "sentences": [1, 5, 4]}, "665817": {"label": "SUPPORT", "sentences": [7, 4, 6]}}}
+{"id": 70, "evidence": {"5956380": {"label": "CONTRADICT", "sentences": [3, 5, 6]}, "4414547": {"label": "CONTRADICT", "sentences": [5, 2, 3]}, "21295300": {"label": "CONTRADICT", "sentences": [6, 5, 7]}}}
+{"id": 72, "evidence": {}}

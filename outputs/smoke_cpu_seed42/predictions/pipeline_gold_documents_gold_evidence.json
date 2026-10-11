@@ -1,0 +1,836 @@
+{
+  "1": {
+    "id": 1,
+    "verdict": "NOT_ENOUGH_INFO",
+    "evidence": {},
+    "documents": [],
+    "ranked_documents": [
+      {
+        "doc_id": 45638119,
+        "title": "ALDH1 is a marker of normal and malignant human mammary stem cells and a predictor of poor clinical outcome."
+      },
+      {
+        "doc_id": 106301,
+        "title": "Cardiac neural crest cells contribute to the dormant multipotent stem cell in the mammalian heart"
+      },
+      {
+        "doc_id": 323030,
+        "title": "Dynamics of adherens junctions in epithelial establishment, maintenance, and remodeling"
+      },
+      {
+        "doc_id": 159469,
+        "title": "HTRF: A Technology Tailored for Drug Discovery –A Review of Theoretical Aspects and Recent Applications"
+      },
+      {
+        "doc_id": 502797,
+        "title": "Chemical approaches to stem cell biology and therapeutics."
+      }
+    ],
+    "abstained": true,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  },
+  "3": {
+    "id": 3,
+    "verdict": "CONTRADICT",
+    "evidence": {
+      "14717500": {
+        "label": "CONTRADICT",
+        "sentences": [
+          7
+        ]
+      }
+    },
+    "documents": [
+      {
+        "doc_id": 14717500,
+        "title": "Rare Variants Create Synthetic Genome-Wide Associations",
+        "label": "CONTRADICT",
+        "selection_score": 1.0,
+        "stance_probability": 0.5000935196876526,
+        "stance_probabilities": {
+          "CONTRADICT": 0.5000935196876526,
+          "SUPPORT": 0.49990642070770264
+        },
+        "retrieval_score": 2.4460225105285645,
+        "evidence": [
+          {
+            "index": 7,
+            "text": "In conclusion, uncommon or rare genetic variants can easily create synthetic associations that are credited to common variants, and this possibility requires careful consideration in the interpretation and follow up of GWAS signals."
+          }
+        ],
+        "aggregation_score": 0.5000935196876526
+      }
+    ],
+    "ranked_documents": [
+      {
+        "doc_id": 14717500,
+        "title": "Rare Variants Create Synthetic Genome-Wide Associations"
+      },
+      {
+        "doc_id": 4414547,
+        "title": "Mosaic PPM1D mutations are associated with predisposition to breast and ovarian cancer"
+      },
+      {
+        "doc_id": 380526,
+        "title": "Common variants in DGKK are strongly associated with risk of hypospadias"
+      },
+      {
+        "doc_id": 461550,
+        "title": "Multiplex genome engineering using CRISPR/Cas systems."
+      },
+      {
+        "doc_id": 263364,
+        "title": "Genetic Variation in the Interleukin-28B Gene Is Associated with Spontaneous Clearance and Progression of Hepatitis C Virus in Moroccan Patients"
+      }
+    ],
+    "abstained": false,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  },
+  "5": {
+    "id": 5,
+    "verdict": "CONTRADICT",
+    "evidence": {
+      "13734012": {
+        "label": "CONTRADICT",
+        "sentences": [
+          4
+        ]
+      }
+    },
+    "documents": [
+      {
+        "doc_id": 13734012,
+        "title": "Prevalent abnormal prion protein in human appendixes after bovine spongiform encephalopathy epizootic: large scale survey",
+        "label": "CONTRADICT",
+        "selection_score": 1.0,
+        "stance_probability": 0.5078484416007996,
+        "stance_probabilities": {
+          "CONTRADICT": 0.5078484416007996,
+          "SUPPORT": 0.4921515882015228
+        },
+        "retrieval_score": -0.4422983229160309,
+        "evidence": [
+          {
+            "index": 4,
+            "text": "RESULTS Of the 32,441 appendix samples 16 were positive for abnormal PrP, indicating an overall prevalence of 493 per million population (95% confidence interval 282 to 801 per million)."
+          }
+        ],
+        "aggregation_score": 0.5078484416007996
+      }
+    ],
+    "ranked_documents": [
+      {
+        "doc_id": 13734012,
+        "title": "Prevalent abnormal prion protein in human appendixes after bovine spongiform encephalopathy epizootic: large scale survey"
+      },
+      {
+        "doc_id": 323335,
+        "title": "Long-term outcome of patients with asystole induced by head-up tilt test."
+      },
+      {
+        "doc_id": 4414547,
+        "title": "Mosaic PPM1D mutations are associated with predisposition to breast and ovarian cancer"
+      },
+      {
+        "doc_id": 14717500,
+        "title": "Rare Variants Create Synthetic Genome-Wide Associations"
+      },
+      {
+        "doc_id": 70490,
+        "title": "Simplifying likelihood ratios"
+      }
+    ],
+    "abstained": false,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  },
+  "13": {
+    "id": 13,
+    "verdict": "NOT_ENOUGH_INFO",
+    "evidence": {},
+    "documents": [],
+    "ranked_documents": [
+      {
+        "doc_id": 356218,
+        "title": "Outcome of pregnancy in women with moderate or severe renal insufficiency."
+      },
+      {
+        "doc_id": 56893404,
+        "title": "Macrosomia and Hyperinsulinaemic Hypoglycaemia in Patients with Heterozygous Mutations in the HNF4A Gene"
+      },
+      {
+        "doc_id": 439670,
+        "title": "Prepregnancy BMI and the risk of gestational diabetes: a systematic review of the literature with meta-analysis."
+      },
+      {
+        "doc_id": 581832,
+        "title": "Global, regional, and national disability-adjusted life-years (DALYs) for 315 diseases and injuries and healthy life expectancy (HALE), 1990–2015: a systematic analysis for the Global Burden of Disease Study 2015"
+      },
+      {
+        "doc_id": 103007,
+        "title": "Cross sectional stature and weight reference curves for the UK, 1990."
+      }
+    ],
+    "abstained": true,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  },
+  "36": {
+    "id": 36,
+    "verdict": "NOT_ENOUGH_INFO",
+    "evidence": {},
+    "documents": [],
+    "ranked_documents": [
+      {
+        "doc_id": 33409100,
+        "title": "Effect of homocysteine lowering on mortality and vascular disease in advanced chronic kidney disease and end-stage renal disease: a randomized controlled trial."
+      },
+      {
+        "doc_id": 11705328,
+        "title": "Randomized trial of folic acid supplementation and serum homocysteine levels."
+      },
+      {
+        "doc_id": 18174210,
+        "title": "Increased Microerythrocyte Count in Homozygous α+-Thalassaemia Contributes to Protection against Severe Malarial Anaemia"
+      },
+      {
+        "doc_id": 520579,
+        "title": "Plasma vitamin D metabolites and risk of colorectal cancer in women."
+      },
+      {
+        "doc_id": 275294,
+        "title": "Environmental factors that influence the cutaneous production of vitamin D"
+      }
+    ],
+    "abstained": true,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  },
+  "42": {
+    "id": 42,
+    "verdict": "SUPPORT",
+    "evidence": {
+      "18174210": {
+        "label": "SUPPORT",
+        "sentences": [
+          10
+        ]
+      }
+    },
+    "documents": [
+      {
+        "doc_id": 18174210,
+        "title": "Increased Microerythrocyte Count in Homozygous α+-Thalassaemia Contributes to Protection against Severe Malarial Anaemia",
+        "label": "SUPPORT",
+        "selection_score": 1.0,
+        "stance_probability": 0.5068671107292175,
+        "stance_probabilities": {
+          "CONTRADICT": 0.49313291907310486,
+          "SUPPORT": 0.5068671107292175
+        },
+        "retrieval_score": 6.468706130981445,
+        "evidence": [
+          {
+            "index": 10,
+            "text": "CONCLUSIONS The increased erythrocyte count and microcytosis in children homozygous for alpha(+)-thalassaemia may contribute substantially to their protection against SMA."
+          }
+        ],
+        "aggregation_score": 0.5068671107292175
+      }
+    ],
+    "ranked_documents": [
+      {
+        "doc_id": 18174210,
+        "title": "Increased Microerythrocyte Count in Homozygous α+-Thalassaemia Contributes to Protection against Severe Malarial Anaemia"
+      },
+      {
+        "doc_id": 33409100,
+        "title": "Effect of homocysteine lowering on mortality and vascular disease in advanced chronic kidney disease and end-stage renal disease: a randomized controlled trial."
+      },
+      {
+        "doc_id": 56893404,
+        "title": "Macrosomia and Hyperinsulinaemic Hypoglycaemia in Patients with Heterozygous Mutations in the HNF4A Gene"
+      },
+      {
+        "doc_id": 11705328,
+        "title": "Randomized trial of folic acid supplementation and serum homocysteine levels."
+      },
+      {
+        "doc_id": 663464,
+        "title": "Age‐associated microRNA expression in human peripheral blood is associated with all‐cause mortality and age‐related traits"
+      }
+    ],
+    "abstained": false,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  },
+  "48": {
+    "id": 48,
+    "verdict": "CONTRADICT",
+    "evidence": {
+      "13734012": {
+        "label": "CONTRADICT",
+        "sentences": [
+          4
+        ]
+      }
+    },
+    "documents": [
+      {
+        "doc_id": 13734012,
+        "title": "Prevalent abnormal prion protein in human appendixes after bovine spongiform encephalopathy epizootic: large scale survey",
+        "label": "CONTRADICT",
+        "selection_score": 1.0,
+        "stance_probability": 0.502651035785675,
+        "stance_probabilities": {
+          "CONTRADICT": 0.502651035785675,
+          "SUPPORT": 0.4973490536212921
+        },
+        "retrieval_score": -7.722184181213379,
+        "evidence": [
+          {
+            "index": 4,
+            "text": "RESULTS Of the 32,441 appendix samples 16 were positive for abnormal PrP, indicating an overall prevalence of 493 per million population (95% confidence interval 282 to 801 per million)."
+          }
+        ],
+        "aggregation_score": 0.502651035785675
+      }
+    ],
+    "ranked_documents": [
+      {
+        "doc_id": 13734012,
+        "title": "Prevalent abnormal prion protein in human appendixes after bovine spongiform encephalopathy epizootic: large scale survey"
+      },
+      {
+        "doc_id": 253672,
+        "title": "Probable person to person transmission of novel avian influenza A (H7N9) virus in Eastern China, 2013: epidemiological investigation"
+      },
+      {
+        "doc_id": 601033,
+        "title": "Human T Cell Leukemia Virus Reactivation with Progression of Adult T-Cell Leukemia-Lymphoma"
+      },
+      {
+        "doc_id": 380526,
+        "title": "Common variants in DGKK are strongly associated with risk of hypospadias"
+      },
+      {
+        "doc_id": 14717500,
+        "title": "Rare Variants Create Synthetic Genome-Wide Associations"
+      }
+    ],
+    "abstained": false,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  },
+  "49": {
+    "id": 49,
+    "verdict": "SUPPORT",
+    "evidence": {
+      "5953485": {
+        "label": "SUPPORT",
+        "sentences": [
+          1
+        ]
+      }
+    },
+    "documents": [
+      {
+        "doc_id": 5953485,
+        "title": "ADAR1 Forms a Complex with Dicer to Promote MicroRNA Processing and RNA-Induced Gene Silencing",
+        "label": "SUPPORT",
+        "selection_score": 1.0,
+        "stance_probability": 0.5002675652503967,
+        "stance_probabilities": {
+          "CONTRADICT": 0.49973243474960327,
+          "SUPPORT": 0.5002675652503967
+        },
+        "retrieval_score": 5.385323524475098,
+        "evidence": [
+          {
+            "index": 1,
+            "text": "In this study, we investigated the interaction of the RNA editing mechanism with the RNA interference (RNAi) machinery and found that ADAR1 forms a complex with Dicer through direct protein-protein interaction."
+          }
+        ],
+        "aggregation_score": 0.5002675652503967
+      }
+    ],
+    "ranked_documents": [
+      {
+        "doc_id": 5953485,
+        "title": "ADAR1 Forms a Complex with Dicer to Promote MicroRNA Processing and RNA-Induced Gene Silencing"
+      },
+      {
+        "doc_id": 153744,
+        "title": "Down-regulation of a host microRNA by a Herpesvirus saimiri noncoding RNA."
+      },
+      {
+        "doc_id": 654735,
+        "title": "Exosomal levels of miRNA-21 from cerebrospinal fluids associated with poor prognosis and tumor recurrence of glioma patients"
+      },
+      {
+        "doc_id": 164985,
+        "title": "Fra-1 protooncogene regulates IL-6 expression in macrophages and promotes the generation of M2d macrophages"
+      },
+      {
+        "doc_id": 461550,
+        "title": "Multiplex genome engineering using CRISPR/Cas systems."
+      }
+    ],
+    "abstained": false,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  },
+  "50": {
+    "id": 50,
+    "verdict": "SUPPORT",
+    "evidence": {
+      "12580014": {
+        "label": "SUPPORT",
+        "sentences": [
+          1
+        ]
+      }
+    },
+    "documents": [
+      {
+        "doc_id": 12580014,
+        "title": "Keratin-dependent regulation of Aire and gene expression in skin tumor keratinocytes",
+        "label": "SUPPORT",
+        "selection_score": 1.0,
+        "stance_probability": 0.5124937295913696,
+        "stance_probabilities": {
+          "CONTRADICT": 0.48750630021095276,
+          "SUPPORT": 0.5124937295913696
+        },
+        "retrieval_score": 7.002067565917969,
+        "evidence": [
+          {
+            "index": 1,
+            "text": "We report that autoimmune regulator (Aire), a transcriptional regulator, is inducibly expressed in human and mouse tumor keratinocytes in a K17-dependent manner and is required for timely onset of Gli2-induced skin tumorigenesis in mice."
+          }
+        ],
+        "aggregation_score": 0.5124937295913696
+      }
+    ],
+    "ranked_documents": [
+      {
+        "doc_id": 12580014,
+        "title": "Keratin-dependent regulation of Aire and gene expression in skin tumor keratinocytes"
+      },
+      {
+        "doc_id": 301838,
+        "title": "Rank Signaling Links the Development of Invariant γδ T Cell Progenitors and Aire+ Medullary Epithelium"
+      },
+      {
+        "doc_id": 293661,
+        "title": "Targeting arginine metabolism pathway to treat arginine-dependent cancers."
+      },
+      {
+        "doc_id": 496873,
+        "title": "CRITICAL REVIEW Cutaneous Vasculitis Update: Diagnostic Criteria,"
+      },
+      {
+        "doc_id": 275294,
+        "title": "Environmental factors that influence the cutaneous production of vitamin D"
+      }
+    ],
+    "abstained": false,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  },
+  "51": {
+    "id": 51,
+    "verdict": "SUPPORT",
+    "evidence": {
+      "45638119": {
+        "label": "SUPPORT",
+        "sentences": [
+          4
+        ]
+      }
+    },
+    "documents": [
+      {
+        "doc_id": 45638119,
+        "title": "ALDH1 is a marker of normal and malignant human mammary stem cells and a predictor of poor clinical outcome.",
+        "label": "SUPPORT",
+        "selection_score": 1.0,
+        "stance_probability": 0.5076378583908081,
+        "stance_probabilities": {
+          "CONTRADICT": 0.4923621118068695,
+          "SUPPORT": 0.5076378583908081
+        },
+        "retrieval_score": 5.245461463928223,
+        "evidence": [
+          {
+            "index": 4,
+            "text": "In a series of 577 breast carcinomas, expression of ALDH1 detected by immunostaining correlated with poor prognosis."
+          }
+        ],
+        "aggregation_score": 0.5076378583908081
+      }
+    ],
+    "ranked_documents": [
+      {
+        "doc_id": 45638119,
+        "title": "ALDH1 is a marker of normal and malignant human mammary stem cells and a predictor of poor clinical outcome."
+      },
+      {
+        "doc_id": 24341590,
+        "title": "Association between CYP2D6 polymorphisms and outcomes among women with early stage breast cancer treated with tamoxifen."
+      },
+      {
+        "doc_id": 4414547,
+        "title": "Mosaic PPM1D mutations are associated with predisposition to breast and ovarian cancer"
+      },
+      {
+        "doc_id": 313403,
+        "title": "High-Infiltration of Tumor-Associated Macrophages Predicts Unfavorable Clinical Outcome for Node-Negative Breast Cancer"
+      },
+      {
+        "doc_id": 667451,
+        "title": "Evolution and Impact of Subclonal Mutations in Chronic Lymphocytic Leukemia"
+      }
+    ],
+    "abstained": false,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  },
+  "53": {
+    "id": 53,
+    "verdict": "SUPPORT",
+    "evidence": {
+      "45638119": {
+        "label": "SUPPORT",
+        "sentences": [
+          4
+        ]
+      }
+    },
+    "documents": [
+      {
+        "doc_id": 45638119,
+        "title": "ALDH1 is a marker of normal and malignant human mammary stem cells and a predictor of poor clinical outcome.",
+        "label": "SUPPORT",
+        "selection_score": 1.0,
+        "stance_probability": 0.5054807066917419,
+        "stance_probabilities": {
+          "CONTRADICT": 0.49451932311058044,
+          "SUPPORT": 0.5054807066917419
+        },
+        "retrieval_score": 5.232187747955322,
+        "evidence": [
+          {
+            "index": 4,
+            "text": "In a series of 577 breast carcinomas, expression of ALDH1 detected by immunostaining correlated with poor prognosis."
+          }
+        ],
+        "aggregation_score": 0.5054807066917419
+      }
+    ],
+    "ranked_documents": [
+      {
+        "doc_id": 45638119,
+        "title": "ALDH1 is a marker of normal and malignant human mammary stem cells and a predictor of poor clinical outcome."
+      },
+      {
+        "doc_id": 4414547,
+        "title": "Mosaic PPM1D mutations are associated with predisposition to breast and ovarian cancer"
+      },
+      {
+        "doc_id": 24341590,
+        "title": "Association between CYP2D6 polymorphisms and outcomes among women with early stage breast cancer treated with tamoxifen."
+      },
+      {
+        "doc_id": 313403,
+        "title": "High-Infiltration of Tumor-Associated Macrophages Predicts Unfavorable Clinical Outcome for Node-Negative Breast Cancer"
+      },
+      {
+        "doc_id": 33370,
+        "title": "Targeting A20 Decreases Glioma Stem Cell Survival and Tumor Growth"
+      }
+    ],
+    "abstained": false,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  },
+  "54": {
+    "id": 54,
+    "verdict": "SUPPORT",
+    "evidence": {
+      "49556906": {
+        "label": "SUPPORT",
+        "sentences": [
+          5
+        ]
+      }
+    },
+    "documents": [
+      {
+        "doc_id": 49556906,
+        "title": "Metformin reverses established lung fibrosis in a bleomycin model",
+        "label": "SUPPORT",
+        "selection_score": 1.0,
+        "stance_probability": 0.5129492878913879,
+        "stance_probabilities": {
+          "CONTRADICT": 0.48705071210861206,
+          "SUPPORT": 0.5129492878913879
+        },
+        "retrieval_score": 3.1335573196411133,
+        "evidence": [
+          {
+            "index": 5,
+            "text": "Pharmacological activation of AMPK in myofibroblasts from lungs of humans with IPF display lower fibrotic activity, along with enhanced mitochondrial biogenesis and normalization of sensitivity to apoptosis."
+          }
+        ],
+        "aggregation_score": 0.5129492878913879
+      }
+    ],
+    "ranked_documents": [
+      {
+        "doc_id": 49556906,
+        "title": "Metformin reverses established lung fibrosis in a bleomycin model"
+      },
+      {
+        "doc_id": 364522,
+        "title": "High-mobility group box-1 protein induces osteogenic phenotype changes in aortic valve interstitial cells."
+      },
+      {
+        "doc_id": 5531479,
+        "title": "The Ly49Q receptor plays a crucial role in neutrophil polarization and migration by regulating raft trafficking."
+      },
+      {
+        "doc_id": 219475,
+        "title": "Gr-1+CD11b+ myeloid cells tip the balance of immune protection to tumor promotion in the premetastatic lung."
+      },
+      {
+        "doc_id": 118568,
+        "title": "Acute administration of recombinant Angiopoietin-1 ameliorates multiple-organ dysfunction syndrome and improves survival in murine sepsis."
+      }
+    ],
+    "abstained": false,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  },
+  "56": {
+    "id": 56,
+    "verdict": "CONTRADICT",
+    "evidence": {
+      "4709641": {
+        "label": "CONTRADICT",
+        "sentences": [
+          1
+        ]
+      }
+    },
+    "documents": [
+      {
+        "doc_id": 4709641,
+        "title": "Gain of toxic Apolipoprotein E4 effects in Human iPSC-Derived Neurons Is Ameliorated by a Small-Molecule Structure Corrector",
+        "label": "CONTRADICT",
+        "selection_score": 1.0,
+        "stance_probability": 0.5047975778579712,
+        "stance_probabilities": {
+          "CONTRADICT": 0.5047975778579712,
+          "SUPPORT": 0.4952023923397064
+        },
+        "retrieval_score": 6.266223907470703,
+        "evidence": [
+          {
+            "index": 1,
+            "text": "Using human neurons derived from induced pluripotent stem cells that expressed apolipoprotein E4 (ApoE4), a variant of the APOE gene product and the major genetic risk factor for AD, we demonstrated that ApoE4-expressing neurons had higher levels of tau phosphorylation, unrelated to their increased production of amyloid-β (Aβ) peptides, and that they displayed GABAergic neuron degeneration."
+          }
+        ],
+        "aggregation_score": 0.5047975778579712
+      }
+    ],
+    "ranked_documents": [
+      {
+        "doc_id": 4709641,
+        "title": "Gain of toxic Apolipoprotein E4 effects in Human iPSC-Derived Neurons Is Ameliorated by a Small-Molecule Structure Corrector"
+      },
+      {
+        "doc_id": 21295300,
+        "title": "Phosphorylation of ATM by Cdk5 mediates DNA damage signaling and regulates neuronal death"
+      },
+      {
+        "doc_id": 469066,
+        "title": "Lpd depletion reveals that SRF specifies radial versus tangential migration of pyramidal neurons"
+      },
+      {
+        "doc_id": 368506,
+        "title": "Generation of mice with a conditional allele for the p75(NTR) neurotrophin receptor gene."
+      },
+      {
+        "doc_id": 19238,
+        "title": "The human myelin basic protein gene is included within a 179-kilobase transcription unit: expression in the immune and central nervous systems."
+      }
+    ],
+    "abstained": false,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  },
+  "57": {
+    "id": 57,
+    "verdict": "CONTRADICT",
+    "evidence": {
+      "4709641": {
+        "label": "CONTRADICT",
+        "sentences": [
+          1
+        ]
+      }
+    },
+    "documents": [
+      {
+        "doc_id": 4709641,
+        "title": "Gain of toxic Apolipoprotein E4 effects in Human iPSC-Derived Neurons Is Ameliorated by a Small-Molecule Structure Corrector",
+        "label": "CONTRADICT",
+        "selection_score": 1.0,
+        "stance_probability": 0.5053992867469788,
+        "stance_probabilities": {
+          "CONTRADICT": 0.5053992867469788,
+          "SUPPORT": 0.49460068345069885
+        },
+        "retrieval_score": 4.933202743530273,
+        "evidence": [
+          {
+            "index": 1,
+            "text": "Using human neurons derived from induced pluripotent stem cells that expressed apolipoprotein E4 (ApoE4), a variant of the APOE gene product and the major genetic risk factor for AD, we demonstrated that ApoE4-expressing neurons had higher levels of tau phosphorylation, unrelated to their increased production of amyloid-β (Aβ) peptides, and that they displayed GABAergic neuron degeneration."
+          }
+        ],
+        "aggregation_score": 0.5053992867469788
+      }
+    ],
+    "ranked_documents": [
+      {
+        "doc_id": 4709641,
+        "title": "Gain of toxic Apolipoprotein E4 effects in Human iPSC-Derived Neurons Is Ameliorated by a Small-Molecule Structure Corrector"
+      },
+      {
+        "doc_id": 21295300,
+        "title": "Phosphorylation of ATM by Cdk5 mediates DNA damage signaling and regulates neuronal death"
+      },
+      {
+        "doc_id": 33370,
+        "title": "Targeting A20 Decreases Glioma Stem Cell Survival and Tumor Growth"
+      },
+      {
+        "doc_id": 469066,
+        "title": "Lpd depletion reveals that SRF specifies radial versus tangential migration of pyramidal neurons"
+      },
+      {
+        "doc_id": 368506,
+        "title": "Generation of mice with a conditional allele for the p75(NTR) neurotrophin receptor gene."
+      }
+    ],
+    "abstained": false,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  },
+  "70": {
+    "id": 70,
+    "verdict": "SUPPORT",
+    "evidence": {
+      "4414547": {
+        "label": "SUPPORT",
+        "sentences": [
+          5
+        ]
+      },
+      "5956380": {
+        "label": "SUPPORT",
+        "sentences": [
+          5,
+          6
+        ]
+      }
+    },
+    "documents": [
+      {
+        "doc_id": 4414547,
+        "title": "Mosaic PPM1D mutations are associated with predisposition to breast and ovarian cancer",
+        "label": "SUPPORT",
+        "selection_score": 1.0,
+        "stance_probability": 0.5039898753166199,
+        "stance_probabilities": {
+          "CONTRADICT": 0.4960101246833801,
+          "SUPPORT": 0.5039898753166199
+        },
+        "retrieval_score": -0.8457582592964172,
+        "evidence": [
+          {
+            "index": 5,
+            "text": "Functional studies demonstrate that the mutations result in enhanced suppression of p53 in response to ionizing radiation exposure, suggesting that the mutant alleles encode hyperactive PPM1D isoforms."
+          }
+        ],
+        "aggregation_score": 0.5039898753166199
+      },
+      {
+        "doc_id": 5956380,
+        "title": "Exome sequencing identifies somatic gain-of-function PPM1D mutations in brainstem gliomas",
+        "label": "SUPPORT",
+        "selection_score": 1.0,
+        "stance_probability": 0.5024784803390503,
+        "stance_probabilities": {
+          "CONTRADICT": 0.4975215196609497,
+          "SUPPORT": 0.5024784803390503
+        },
+        "retrieval_score": 2.813905715942383,
+        "evidence": [
+          {
+            "index": 5,
+            "text": "PPM1D mutations were mutually exclusive with TP53 mutations in BSG and attenuated p53 activation in vitro."
+          },
+          {
+            "index": 6,
+            "text": "PPM1D mutations were truncating alterations in exon 6 that enhanced the ability of PPM1D to suppress the activation of the DNA damage response checkpoint protein CHK2."
+          }
+        ],
+        "aggregation_score": 0.5024784803390503
+      }
+    ],
+    "ranked_documents": [
+      {
+        "doc_id": 5956380,
+        "title": "Exome sequencing identifies somatic gain-of-function PPM1D mutations in brainstem gliomas"
+      },
+      {
+        "doc_id": 470625,
+        "title": "Identification of p18 INK4c as a tumor suppressor gene in glioblastoma multiforme."
+      },
+      {
+        "doc_id": 164189,
+        "title": "Chk1 inhibits replication factory activation but allows dormant origin firing in existing factories"
+      },
+      {
+        "doc_id": 4414547,
+        "title": "Mosaic PPM1D mutations are associated with predisposition to breast and ovarian cancer"
+      },
+      {
+        "doc_id": 21295300,
+        "title": "Phosphorylation of ATM by Cdk5 mediates DNA damage signaling and regulates neuronal death"
+      }
+    ],
+    "abstained": false,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  },
+  "72": {
+    "id": 72,
+    "verdict": "NOT_ENOUGH_INFO",
+    "evidence": {},
+    "documents": [],
+    "ranked_documents": [
+      {
+        "doc_id": 600437,
+        "title": "Endosome-ER Contacts Control Actin Nucleation and Retromer Function through VAP-Dependent Regulation of PI4P"
+      },
+      {
+        "doc_id": 106301,
+        "title": "Cardiac neural crest cells contribute to the dormant multipotent stem cell in the mammalian heart"
+      },
+      {
+        "doc_id": 612002,
+        "title": "Control of assembly and function of glutamate receptors by the amino-terminal domain."
+      },
+      {
+        "doc_id": 323030,
+        "title": "Dynamics of adherens junctions in epithelial establishment, maintenance, and remodeling"
+      },
+      {
+        "doc_id": 317204,
+        "title": "Murine Dishevelled 3 Functions in Redundant Pathways with Dishevelled 1 and 2 in Normal Cardiac Outflow Tract, Cochlea, and Neural Tube Development"
+      }
+    ],
+    "abstained": true,
+    "aggregation": "Highest selection score × stance probability; ties use smallest document ID"
+  }
+}

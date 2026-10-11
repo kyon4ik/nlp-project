@@ -1,0 +1,74 @@
+[
+  {
+    "stance_threshold": 0.5,
+    "document_threshold": -10.0,
+    "validation_official_abstract_f1": 0.16129032258064518,
+    "validation_claim_macro_f1": 0.34259259259259256
+  },
+  {
+    "stance_threshold": 0.5,
+    "document_threshold": -2.0,
+    "validation_official_abstract_f1": 0.3636363636363637,
+    "validation_claim_macro_f1": 0.5213675213675214
+  },
+  {
+    "stance_threshold": 0.5,
+    "document_threshold": 0.0,
+    "validation_official_abstract_f1": 0.3157894736842105,
+    "validation_claim_macro_f1": 0.4527777777777778
+  },
+  {
+    "stance_threshold": 0.5,
+    "document_threshold": 2.0,
+    "validation_official_abstract_f1": 0.35294117647058826,
+    "validation_claim_macro_f1": 0.45171957671957674
+  },
+  {
+    "stance_threshold": 0.65,
+    "document_threshold": -10.0,
+    "validation_official_abstract_f1": 0.0,
+    "validation_claim_macro_f1": 0.2028985507246377
+  },
+  {
+    "stance_threshold": 0.65,
+    "document_threshold": -2.0,
+    "validation_official_abstract_f1": 0.0,
+    "validation_claim_macro_f1": 0.2028985507246377
+  },
+  {
+    "stance_threshold": 0.65,
+    "document_threshold": 0.0,
+    "validation_official_abstract_f1": 0.0,
+    "validation_claim_macro_f1": 0.2028985507246377
+  },
+  {
+    "stance_threshold": 0.65,
+    "document_threshold": 2.0,
+    "validation_official_abstract_f1": 0.0,
+    "validation_claim_macro_f1": 0.2028985507246377
+  },
+  {
+    "stance_threshold": 0.8,
+    "document_threshold": -10.0,
+    "validation_official_abstract_f1": 0.0,
+    "validation_claim_macro_f1": 0.2028985507246377
+  },
+  {
+    "stance_threshold": 0.8,
+    "document_threshold": -2.0,
+    "validation_official_abstract_f1": 0.0,
+    "validation_claim_macro_f1": 0.2028985507246377
+  },
+  {
+    "stance_threshold": 0.8,
+    "document_threshold": 0.0,
+    "validation_official_abstract_f1": 0.0,
+    "validation_claim_macro_f1": 0.2028985507246377
+  },
+  {
+    "stance_threshold": 0.8,
+    "document_threshold": 2.0,
+    "validation_official_abstract_f1": 0.0,
+    "validation_claim_macro_f1": 0.2028985507246377
+  }
+]

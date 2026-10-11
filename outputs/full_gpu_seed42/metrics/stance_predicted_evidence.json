@@ -1,0 +1,49 @@
+{
+  "accuracy": 0.6073619631901841,
+  "macro_f1": 0.57496740547588,
+  "per_class": {
+    "CONTRADICT": {
+      "precision": 0.4153846153846154,
+      "recall": 0.5094339622641509,
+      "f1-score": 0.4576271186440678,
+      "support": 53.0
+    },
+    "SUPPORT": {
+      "precision": 0.7346938775510204,
+      "recall": 0.6545454545454545,
+      "f1-score": 0.6923076923076923,
+      "support": 110.0
+    },
+    "accuracy": 0.6073619631901841,
+    "macro avg": {
+      "precision": 0.5750392464678179,
+      "recall": 0.5819897084048027,
+      "f1-score": 0.57496740547588,
+      "support": 163.0
+    },
+    "weighted avg": {
+      "precision": 0.6308693935337231,
+      "recall": 0.6073619631901841,
+      "f1-score": 0.6160005119139984,
+      "support": 163.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      27,
+      26
+    ],
+    [
+      38,
+      72
+    ]
+  ],
+  "label_order": [
+    "CONTRADICT",
+    "SUPPORT"
+  ],
+  "examples": 163,
+  "gold_document_coverage": 0.7799043062200957,
+  "total_gold_documents": 209,
+  "setting": "Gold documents, predicted evidence; stance only on accepted documents"
+}

@@ -1,0 +1,5 @@
+model,checkpoint,base_model,seed,device,epochs_run,selected_epoch,training_seconds,effective_batch_size
+dense_random,outputs/full_gpu_seed42/checkpoints/dense_random,sentence-transformers/all-MiniLM-L6-v2,42,cuda,3,1,222.84917916099948,16
+dense_hard,outputs/full_gpu_seed42/checkpoints/dense_hard,sentence-transformers/all-MiniLM-L6-v2,42,cuda,3,1,175.7122682900008,16
+selector,outputs/full_gpu_seed42/checkpoints/selector,allenai/scibert_scivocab_uncased,42,cuda,4,3,1559.6986510049974,16
+stance,outputs/full_gpu_seed42/checkpoints/stance,allenai/scibert_scivocab_uncased,42,cuda,5,3,534.457967154005,16

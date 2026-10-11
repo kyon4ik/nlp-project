@@ -1,0 +1,56 @@
+[
+  {
+    "threshold": 0.15,
+    "precision": 0.05113383726100489,
+    "recall": 0.5867346938775511,
+    "f1": 0.09406952965235175,
+    "predicted_sentences": 2249,
+    "gold_sentences": 196,
+    "best_rationale_recall@budget": 0.8084112149532711
+  },
+  {
+    "threshold": 0.25,
+    "precision": 0.05319148936170213,
+    "recall": 0.5867346938775511,
+    "f1": 0.09754028837998303,
+    "predicted_sentences": 2162,
+    "gold_sentences": 196,
+    "best_rationale_recall@budget": 0.8084112149532711
+  },
+  {
+    "threshold": 0.35,
+    "precision": 0.05967825635703165,
+    "recall": 0.5867346938775511,
+    "f1": 0.10833725859632597,
+    "predicted_sentences": 1927,
+    "gold_sentences": 196,
+    "best_rationale_recall@budget": 0.8084112149532711
+  },
+  {
+    "threshold": 0.45,
+    "precision": 0.07922912205567452,
+    "recall": 0.5663265306122449,
+    "f1": 0.13901064495929868,
+    "predicted_sentences": 1401,
+    "gold_sentences": 196,
+    "best_rationale_recall@budget": 0.7710280373831776
+  },
+  {
+    "threshold": 0.55,
+    "precision": 0.11904761904761904,
+    "recall": 0.5102040816326531,
+    "f1": 0.19305019305019303,
+    "predicted_sentences": 840,
+    "gold_sentences": 196,
+    "best_rationale_recall@budget": 0.705607476635514
+  },
+  {
+    "threshold": 0.65,
+    "precision": 0.18829516539440203,
+    "recall": 0.37755102040816324,
+    "f1": 0.25127334465195245,
+    "predicted_sentences": 393,
+    "gold_sentences": 196,
+    "best_rationale_recall@budget": 0.5373831775700935
+  }
+]

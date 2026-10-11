@@ -1,0 +1,13 @@
+{
+  "dense_mode": "hard",
+  "hybrid_name": "hybrid_hard",
+  "rrf_constant": 10,
+  "rrf_weight": 0.5,
+  "dense_embeddings_path": "outputs/full_gpu_seed42/cache/corpus_hard_0a005fb851ff1109.npy",
+  "sentence_threshold": 0.85,
+  "stance_threshold": 0.5,
+  "document_threshold": 0.0,
+  "validation_official_abstract_f1": 0.334841628959276,
+  "validation_claim_macro_f1": 0.526806199372571,
+  "tuning_split": "internal_validation_only"
+}

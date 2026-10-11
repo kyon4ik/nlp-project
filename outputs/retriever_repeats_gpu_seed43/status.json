@@ -1,0 +1,26 @@
+{
+  "data": {
+    "status": "completed",
+    "details": {
+      "corpus": 5183,
+      "train": 656,
+      "validation": 151,
+      "dev": 300
+    }
+  },
+  "dense_random": {
+    "status": "completed",
+    "details": null
+  },
+  "dense_hard": {
+    "status": "completed",
+    "details": null
+  },
+  "retriever_repetition": {
+    "status": "completed",
+    "details": {
+      "reference": "outputs/full_gpu_seed42",
+      "same_split": true
+    }
+  }
+}

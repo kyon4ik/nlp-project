@@ -1,0 +1,83 @@
+{
+  "data": {
+    "status": "completed",
+    "details": {
+      "corpus": 154,
+      "train": 40,
+      "validation": 16,
+      "dev": 16
+    }
+  },
+  "bm25": {
+    "status": "completed",
+    "details": null
+  },
+  "pretrained_dense": {
+    "status": "completed",
+    "details": null
+  },
+  "dense_random": {
+    "status": "completed",
+    "details": null
+  },
+  "dense_hard": {
+    "status": "completed",
+    "details": null
+  },
+  "hybrid": {
+    "status": "completed",
+    "details": {
+      "dense_mode": "random",
+      "hybrid_name": "hybrid_random",
+      "rrf_constant": 10,
+      "rrf_weight": 0.25,
+      "dense_embeddings_path": "outputs/smoke_cpu_seed42/cache/corpus_random_483498699713c3f9.npy",
+      "sentence_threshold": 0.15,
+      "stance_threshold": 0.5,
+      "document_threshold": -2.0,
+      "validation_official_abstract_f1": 0.3636363636363637,
+      "validation_claim_macro_f1": 0.5213675213675214,
+      "tuning_split": "internal_validation_only"
+    }
+  },
+  "reranking": {
+    "status": "completed",
+    "details": null
+  },
+  "supervised": {
+    "status": "completed",
+    "details": {
+      "selector_epochs_run": 1,
+      "stance_epochs_run": 1
+    }
+  },
+  "final_evaluation": {
+    "status": "completed",
+    "details": {
+      "selection": {
+        "dense_mode": "random",
+        "hybrid_name": "hybrid_random",
+        "rrf_constant": 10,
+        "rrf_weight": 0.25,
+        "dense_embeddings_path": "outputs/smoke_cpu_seed42/cache/corpus_random_483498699713c3f9.npy",
+        "sentence_threshold": 0.15,
+        "stance_threshold": 0.5,
+        "document_threshold": -2.0,
+        "validation_official_abstract_f1": 0.3636363636363637,
+        "validation_claim_macro_f1": 0.5213675213675214,
+        "tuning_split": "internal_validation_only"
+      }
+    }
+  },
+  "specter2": {
+    "status": "not_requested",
+    "reason": "Disabled by execution configuration"
+  },
+  "study": {
+    "status": "completed",
+    "details": {
+      "execution_seconds_this_invocation": 81.08440947700001,
+      "smoke_only": true
+    }
+  }
+}

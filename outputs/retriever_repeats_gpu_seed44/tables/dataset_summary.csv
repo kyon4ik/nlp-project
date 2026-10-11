@@ -1,0 +1,6 @@
+split,claims,evaluable_retrieval_claims,SUPPORT,CONTRADICT,NOT_ENOUGH_INFO,support_rationales,contradict_rationales
+original_train,809,505.0,332.0,173.0,304.0,616.0,341.0
+internal_train,656,409.0,265.0,144.0,247.0,497.0,275.0
+internal_validation,151,96.0,67.0,29.0,55.0,119.0,66.0
+official_dev,300,188.0,124.0,64.0,112.0,216.0,122.0
+unlabeled_test,300,,,,,,

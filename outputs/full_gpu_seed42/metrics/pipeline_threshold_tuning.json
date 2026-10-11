@@ -1,0 +1,74 @@
+[
+  {
+    "stance_threshold": 0.5,
+    "document_threshold": -10.0,
+    "validation_official_abstract_f1": 0.30039525691699603,
+    "validation_claim_macro_f1": 0.5160597216935245
+  },
+  {
+    "stance_threshold": 0.5,
+    "document_threshold": -2.0,
+    "validation_official_abstract_f1": 0.3166666666666667,
+    "validation_claim_macro_f1": 0.5377073906485671
+  },
+  {
+    "stance_threshold": 0.5,
+    "document_threshold": 0.0,
+    "validation_official_abstract_f1": 0.334841628959276,
+    "validation_claim_macro_f1": 0.526806199372571
+  },
+  {
+    "stance_threshold": 0.5,
+    "document_threshold": 2.0,
+    "validation_official_abstract_f1": 0.3316582914572864,
+    "validation_claim_macro_f1": 0.5216363255911278
+  },
+  {
+    "stance_threshold": 0.65,
+    "document_threshold": -10.0,
+    "validation_official_abstract_f1": 0.28813559322033894,
+    "validation_claim_macro_f1": 0.4984694437734689
+  },
+  {
+    "stance_threshold": 0.65,
+    "document_threshold": -2.0,
+    "validation_official_abstract_f1": 0.3022222222222222,
+    "validation_claim_macro_f1": 0.5146280076512634
+  },
+  {
+    "stance_threshold": 0.65,
+    "document_threshold": 0.0,
+    "validation_official_abstract_f1": 0.3253588516746411,
+    "validation_claim_macro_f1": 0.5159304019405956
+  },
+  {
+    "stance_threshold": 0.65,
+    "document_threshold": 2.0,
+    "validation_official_abstract_f1": 0.31413612565445026,
+    "validation_claim_macro_f1": 0.5051075684878502
+  },
+  {
+    "stance_threshold": 0.8,
+    "document_threshold": -10.0,
+    "validation_official_abstract_f1": 0.2583732057416268,
+    "validation_claim_macro_f1": 0.48369705411958935
+  },
+  {
+    "stance_threshold": 0.8,
+    "document_threshold": -2.0,
+    "validation_official_abstract_f1": 0.2660098522167488,
+    "validation_claim_macro_f1": 0.49342514783691255
+  },
+  {
+    "stance_threshold": 0.8,
+    "document_threshold": 0.0,
+    "validation_official_abstract_f1": 0.28723404255319146,
+    "validation_claim_macro_f1": 0.49047068220000556
+  },
+  {
+    "stance_threshold": 0.8,
+    "document_threshold": 2.0,
+    "validation_official_abstract_f1": 0.2857142857142857,
+    "validation_claim_macro_f1": 0.47750028886289125
+  }
+]

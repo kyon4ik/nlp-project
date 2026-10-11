@@ -1,0 +1,14 @@
+{
+  "train_examples": 35,
+  "validation_examples": 23,
+  "train_class_counts": [
+    10,
+    25
+  ],
+  "class_weights": [
+    1.75,
+    0.699999988079071
+  ],
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "max_length": 128
+}

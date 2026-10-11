@@ -1,0 +1,14 @@
+{
+  "train_examples": 772,
+  "validation_examples": 185,
+  "train_class_counts": [
+    275,
+    497
+  ],
+  "class_weights": [
+    1.4036363363265991,
+    0.7766599655151367
+  ],
+  "base_model": "allenai/scibert_scivocab_uncased",
+  "max_length": 256
+}

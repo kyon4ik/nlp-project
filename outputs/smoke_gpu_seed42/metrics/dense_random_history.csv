@@ -1,0 +1,2 @@
+epoch,train_loss,validation_loss,validation_recall@10,validation_macro_f1,elapsed_seconds,effective_batch_size
+1,0.029640765417189824,,1.0,,1.6260128819994861,4

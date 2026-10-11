@@ -1,0 +1,371 @@
+[
+  {
+    "claim_id": 3,
+    "claim": "1,000 genomes project enables mapping of genetic sequence variation consisting of rare variants with larger penetrance effects than common variants.",
+    "category": "Incorrect abstention after retrieval",
+    "gold_verdict": "SUPPORT",
+    "predicted_verdict": "NOT_ENOUGH_INFO",
+    "gold_doc_ids": [
+      14717500
+    ],
+    "retrieved_top5": [
+      14717500,
+      4414547,
+      2739854,
+      4632921,
+      19058822
+    ],
+    "predicted_documents": [],
+    "gold_document_diagnostics": [
+      {
+        "doc_id": 14717500,
+        "reranked_position": 1,
+        "accepted_by_pipeline": false,
+        "contains_complete_alternative": false,
+        "correct_stance_if_accepted": null,
+        "sentences_passing_selector": [],
+        "gold_sentence_selector_scores": {
+          "2": 0.004523670766502619,
+          "5": 0.007047456223517656,
+          "7": 0.002566950861364603
+        }
+      }
+    ],
+    "gold_rationales": [
+      {
+        "doc_id": 14717500,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          2,
+          5
+        ],
+        "text": "We propose as an alternative explanation that variants much less common than the associated one may create \"synthetic associations\" by occurring, stochastically, more often in association with one of the alleles at the common site versus the other allele. We show that they are not only possible, but inevitable, and that under simple but reasonable genetic models, they are likely to account for or contribute to many of the recently identified signals reported in genome-wide association studies."
+      },
+      {
+        "doc_id": 14717500,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          7
+        ],
+        "text": "In conclusion, uncommon or rare genetic variants can easily create synthetic associations that are credited to common variants, and this possibility requires careful consideration in the interpretation and follow up of GWAS signals."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.0
+  },
+  {
+    "claim_id": 36,
+    "claim": "A deficiency of vitamin B12 increases blood levels of homocysteine.",
+    "category": "Evidence predicted for an unannotated/NEI claim",
+    "gold_verdict": "NOT_ENOUGH_INFO",
+    "predicted_verdict": "CONTRADICT",
+    "gold_doc_ids": [],
+    "retrieved_top5": [
+      33409100,
+      18557974,
+      37424881,
+      42441846,
+      16252863
+    ],
+    "predicted_documents": [
+      {
+        "doc_id": 18557974,
+        "title": "British Journal of Nutrition (2003), 89, 295–301 q The Authors 2003 DOI: 10.1079/BJN2002776 Plasma homocysteine concentration is decreased by dietary intervention*",
+        "label": "CONTRADICT",
+        "selection_score": 0.9911942481994629,
+        "stance_probability": 0.7778404355049133,
+        "stance_probabilities": {
+          "CONTRADICT": 0.7778404355049133,
+          "SUPPORT": 0.22215953469276428
+        },
+        "retrieval_score": 3.2002577781677246,
+        "evidence": [
+          {
+            "index": 9,
+            "text": "In conclusion, a diet high in fresh berries, citrus fruit, and vegetables effectively increases serum and RBC folate and decreases plasma homocysteine."
+          }
+        ],
+        "aggregation_score": 0.7709909656894354
+      }
+    ],
+    "gold_document_diagnostics": [],
+    "gold_rationales": [],
+    "official_abstract_f1_for_claim": 0.0
+  },
+  {
+    "claim_id": 49,
+    "claim": "ADAR1 binds to Dicer to cleave pre-miRNA.",
+    "category": "Correct claim verdict but incomplete/wrong rationale or document",
+    "gold_verdict": "SUPPORT",
+    "predicted_verdict": "SUPPORT",
+    "gold_doc_ids": [
+      5953485
+    ],
+    "retrieved_top5": [
+      5953485,
+      5702790,
+      23913146,
+      18467982,
+      13964633
+    ],
+    "predicted_documents": [
+      {
+        "doc_id": 5953485,
+        "title": "ADAR1 Forms a Complex with Dicer to Promote MicroRNA Processing and RNA-Induced Gene Silencing",
+        "label": "SUPPORT",
+        "selection_score": 0.9871785640716553,
+        "stance_probability": 0.9764316082000732,
+        "stance_probabilities": {
+          "CONTRADICT": 0.023568440228700638,
+          "SUPPORT": 0.9764316082000732
+        },
+        "retrieval_score": 5.352324962615967,
+        "evidence": [
+          {
+            "index": 2,
+            "text": "Most importantly, ADAR1 increases the maximum rate (Vmax) of pre-microRNA (miRNA) cleavage by Dicer and facilitates loading of miRNA onto RNA-induced silencing complexes, identifying a new role of ADAR1 in miRNA processing and RNAi mechanisms."
+          }
+        ],
+        "aggregation_score": 0.9639123528971254
+      },
+      {
+        "doc_id": 5702790,
+        "title": "Phosphate and R2D2 restrict the substrate specificity of Dicer-2, an ATP-driven ribonuclease.",
+        "label": "SUPPORT",
+        "selection_score": 0.9884763956069946,
+        "stance_probability": 0.9777826070785522,
+        "stance_probabilities": {
+          "CONTRADICT": 0.022217445075511932,
+          "SUPPORT": 0.9777826070785522
+        },
+        "retrieval_score": 3.8030459880828857,
+        "evidence": [
+          {
+            "index": 2,
+            "text": "We find that purified Dicer-2 can efficiently cleave pre-miRNA, but that inorganic phosphate and the Dicer-2 partner protein R2D2 inhibit pre-miRNA cleavage."
+          }
+        ],
+        "aggregation_score": 0.9665150271322176
+      }
+    ],
+    "gold_document_diagnostics": [
+      {
+        "doc_id": 5953485,
+        "reranked_position": 1,
+        "accepted_by_pipeline": true,
+        "contains_complete_alternative": true,
+        "correct_stance_if_accepted": true,
+        "sentences_passing_selector": [
+          2
+        ],
+        "gold_sentence_selector_scores": {
+          "1": 0.033241380006074905,
+          "2": 0.9871785640716553
+        }
+      }
+    ],
+    "gold_rationales": [
+      {
+        "doc_id": 5953485,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          1
+        ],
+        "text": "In this study, we investigated the interaction of the RNA editing mechanism with the RNA interference (RNAi) machinery and found that ADAR1 forms a complex with Dicer through direct protein-protein interaction."
+      },
+      {
+        "doc_id": 5953485,
+        "label": "SUPPORT",
+        "sentence_indices": [
+          2
+        ],
+        "text": "Most importantly, ADAR1 increases the maximum rate (Vmax) of pre-microRNA (miRNA) cleavage by Dicer and facilitates loading of miRNA onto RNA-induced silencing complexes, identifying a new role of ADAR1 in miRNA processing and RNAi mechanisms."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.6666666666666666
+  },
+  {
+    "claim_id": 51,
+    "claim": "ALDH1 expression is associated with better breast cancer outcomes.",
+    "category": "Stance or document aggregation error",
+    "gold_verdict": "CONTRADICT",
+    "predicted_verdict": "SUPPORT",
+    "gold_doc_ids": [
+      45638119
+    ],
+    "retrieved_top5": [
+      8963413,
+      45638119,
+      23830488,
+      21439640,
+      7821634
+    ],
+    "predicted_documents": [
+      {
+        "doc_id": 8963413,
+        "title": "PD-L1 expression in human cancers and its association with clinical outcomes",
+        "label": "SUPPORT",
+        "selection_score": 0.9290016293525696,
+        "stance_probability": 0.9505606293678284,
+        "stance_probabilities": {
+          "CONTRADICT": 0.049439337104558945,
+          "SUPPORT": 0.9505606293678284
+        },
+        "retrieval_score": 5.715096950531006,
+        "evidence": [
+          {
+            "index": 2,
+            "text": "In contrast, PD-L1 expression correlates with better clinical outcomes in breast cancer and merkel cell carcinoma."
+          }
+        ],
+        "aggregation_score": 0.8830723734811166
+      },
+      {
+        "doc_id": 45638119,
+        "title": "ALDH1 is a marker of normal and malignant human mammary stem cells and a predictor of poor clinical outcome.",
+        "label": "SUPPORT",
+        "selection_score": 0.9871608018875122,
+        "stance_probability": 0.9515361189842224,
+        "stance_probabilities": {
+          "CONTRADICT": 0.048463884741067886,
+          "SUPPORT": 0.9515361189842224
+        },
+        "retrieval_score": 5.245461940765381,
+        "evidence": [
+          {
+            "index": 4,
+            "text": "In a series of 577 breast carcinomas, expression of ALDH1 detected by immunostaining correlated with poor prognosis."
+          }
+        ],
+        "aggregation_score": 0.9393191582413962
+      },
+      {
+        "doc_id": 23830488,
+        "title": "Expression of circadian genes correlates with liver metastasis and outcomes in colorectal cancer.",
+        "label": "SUPPORT",
+        "selection_score": 0.9053137302398682,
+        "stance_probability": 0.9673535227775574,
+        "stance_probabilities": {
+          "CONTRADICT": 0.03264655917882919,
+          "SUPPORT": 0.9673535227775574
+        },
+        "retrieval_score": 1.892560601234436,
+        "evidence": [
+          {
+            "index": 8,
+            "text": "On analysis of the relations between outcomes and gene expression, high expression of the Per2 gene was associated with significantly better outcomes than low expression of the Per2 gene."
+          }
+        ],
+        "aggregation_score": 0.8757584261664277
+      },
+      {
+        "doc_id": 7821634,
+        "title": "Profiling of residual breast cancers after neoadjuvant chemotherapy identifies DUSP4 deficiency as a mechanism of drug resistance",
+        "label": "SUPPORT",
+        "selection_score": 0.9794101715087891,
+        "stance_probability": 0.9618507027626038,
+        "stance_probabilities": {
+          "CONTRADICT": 0.038149263709783554,
+          "SUPPORT": 0.9618507027626038
+        },
+        "retrieval_score": 0.008069178089499474,
+        "evidence": [
+          {
+            "index": 7,
+            "text": "Reduced DUSP4 expression in primary tumors after NAC was associated with treatment-refractory high Ki-67 scores and shorter recurrence-free survival."
+          }
+        ],
+        "aggregation_score": 0.942046361758571
+      }
+    ],
+    "gold_document_diagnostics": [
+      {
+        "doc_id": 45638119,
+        "reranked_position": 2,
+        "accepted_by_pipeline": true,
+        "contains_complete_alternative": true,
+        "correct_stance_if_accepted": false,
+        "sentences_passing_selector": [
+          4
+        ],
+        "gold_sentence_selector_scores": {
+          "4": 0.9871608018875122
+        }
+      }
+    ],
+    "gold_rationales": [
+      {
+        "doc_id": 45638119,
+        "label": "CONTRADICT",
+        "sentence_indices": [
+          4
+        ],
+        "text": "In a series of 577 breast carcinomas, expression of ALDH1 detected by immunostaining correlated with poor prognosis."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.0
+  },
+  {
+    "claim_id": 54,
+    "claim": "AMP-activated protein kinase (AMPK) activation increases inflammation-related fibrosis in the lungs.",
+    "category": "Retrieval missed every evidence document at the verification budget",
+    "gold_verdict": "CONTRADICT",
+    "predicted_verdict": "NOT_ENOUGH_INFO",
+    "gold_doc_ids": [
+      49556906
+    ],
+    "retrieved_top5": [
+      3973445,
+      23974474,
+      24721866,
+      1590744,
+      7005276
+    ],
+    "predicted_documents": [],
+    "gold_document_diagnostics": [
+      {
+        "doc_id": 49556906,
+        "reranked_position": 9,
+        "accepted_by_pipeline": false,
+        "contains_complete_alternative": false,
+        "correct_stance_if_accepted": null,
+        "sentences_passing_selector": [
+          5,
+          6,
+          7
+        ],
+        "gold_sentence_selector_scores": {
+          "5": 0.9933925271034241,
+          "6": 0.9933602213859558,
+          "7": 0.9892800450325012
+        }
+      }
+    ],
+    "gold_rationales": [
+      {
+        "doc_id": 49556906,
+        "label": "CONTRADICT",
+        "sentence_indices": [
+          5
+        ],
+        "text": "Pharmacological activation of AMPK in myofibroblasts from lungs of humans with IPF display lower fibrotic activity, along with enhanced mitochondrial biogenesis and normalization of sensitivity to apoptosis."
+      },
+      {
+        "doc_id": 49556906,
+        "label": "CONTRADICT",
+        "sentence_indices": [
+          6
+        ],
+        "text": "In a bleomycin model of lung fibrosis in mice, metformin therapeutically accelerates the resolution of well-established fibrosis in an AMPK-dependent manner."
+      },
+      {
+        "doc_id": 49556906,
+        "label": "CONTRADICT",
+        "sentence_indices": [
+          7
+        ],
+        "text": "These studies implicate deficient AMPK activation in non-resolving, pathologic fibrotic processes, and support a role for metformin (or other AMPK activators) to reverse established fibrosis by facilitating deactivation and apoptosis of myofibroblasts."
+      }
+    ],
+    "official_abstract_f1_for_claim": 0.0
+  }
+]

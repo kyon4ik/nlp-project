@@ -1,0 +1,102 @@
+[
+  {
+    "model": "similarity",
+    "setting": "retrieved_documents",
+    "threshold": 0.65,
+    "sentence_budget_per_document": 3,
+    "precision": 0.18051575931232092,
+    "recall": 0.3442622950819672,
+    "f1": 0.23684210526315788,
+    "predicted_sentences": 698,
+    "gold_sentences": 366,
+    "best_rationale_recall@budget": 0.4800637958532695,
+    "fixed_budget": {
+      "precision": 0.044,
+      "recall": 0.5409836065573771,
+      "f1": 0.0813810110974106,
+      "predicted_sentences": 4500,
+      "gold_sentences": 366,
+      "best_rationale_recall@budget": 0.7272727272727273
+    },
+    "official_selection": {
+      "precision": 0.16475644699140402,
+      "recall": 0.31420765027322406,
+      "f1": 0.2161654135338346
+    }
+  },
+  {
+    "model": "similarity",
+    "setting": "gold_documents",
+    "threshold": 0.65,
+    "sentence_budget_per_document": 3,
+    "precision": 0.434640522875817,
+    "recall": 0.3633879781420765,
+    "f1": 0.3958333333333333,
+    "predicted_sentences": 306,
+    "gold_sentences": 366,
+    "best_rationale_recall@budget": 0.5111642743221692,
+    "fixed_budget": {
+      "precision": 0.34768740031897927,
+      "recall": 0.5956284153005464,
+      "f1": 0.4390735146022155,
+      "predicted_sentences": 627,
+      "gold_sentences": 366,
+      "best_rationale_recall@budget": 0.8038277511961722
+    },
+    "official_selection": {
+      "precision": 0.3954248366013072,
+      "recall": 0.33060109289617484,
+      "f1": 0.36011904761904756
+    }
+  },
+  {
+    "model": "supervised",
+    "setting": "retrieved_documents",
+    "threshold": 0.85,
+    "sentence_budget_per_document": 3,
+    "precision": 0.37057728119180633,
+    "recall": 0.5437158469945356,
+    "f1": 0.4407530454042082,
+    "predicted_sentences": 537,
+    "gold_sentences": 366,
+    "best_rationale_recall@budget": 0.6539074960127592,
+    "fixed_budget": {
+      "precision": 0.060444444444444446,
+      "recall": 0.7431693989071039,
+      "f1": 0.11179613645704893,
+      "predicted_sentences": 4500,
+      "gold_sentences": 366,
+      "best_rationale_recall@budget": 0.8460925039872409
+    },
+    "official_selection": {
+      "precision": 0.34823091247672255,
+      "recall": 0.5109289617486339,
+      "f1": 0.41417497231450723
+    }
+  },
+  {
+    "model": "supervised",
+    "setting": "gold_documents",
+    "threshold": 0.85,
+    "sentence_budget_per_document": 3,
+    "precision": 0.75,
+    "recall": 0.5819672131147541,
+    "f1": 0.6553846153846155,
+    "predicted_sentences": 284,
+    "gold_sentences": 366,
+    "best_rationale_recall@budget": 0.7041467304625201,
+    "fixed_budget": {
+      "precision": 0.48165869218500795,
+      "recall": 0.825136612021858,
+      "f1": 0.608257804632427,
+      "predicted_sentences": 627,
+      "gold_sentences": 366,
+      "best_rationale_recall@budget": 0.9417862838915471
+    },
+    "official_selection": {
+      "precision": 0.704225352112676,
+      "recall": 0.546448087431694,
+      "f1": 0.6153846153846153
+    }
+  }
+]

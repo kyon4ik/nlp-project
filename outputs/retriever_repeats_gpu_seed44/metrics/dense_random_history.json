@@ -1,0 +1,53 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.1057509144766081,
+    "validation": {
+      "evaluable_claims": 96,
+      "Recall@1": 0.6796875,
+      "Recall@3": 0.8428819444444443,
+      "Recall@5": 0.875,
+      "Recall@10": 0.9270833333333334,
+      "Recall@20": 0.9375,
+      "Hit@10": 0.9375,
+      "MRR@10": 0.7942088293650794,
+      "nDCG@10": 0.8221959879425632
+    },
+    "effective_batch_size": 16,
+    "elapsed_seconds": 57.11756210299791
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.03230555991579002,
+    "validation": {
+      "evaluable_claims": 96,
+      "Recall@1": 0.6692708333333334,
+      "Recall@3": 0.8428819444444443,
+      "Recall@5": 0.875,
+      "Recall@10": 0.921875,
+      "Recall@20": 0.9375,
+      "Hit@10": 0.9270833333333334,
+      "MRR@10": 0.7900297619047617,
+      "nDCG@10": 0.8185409759852407
+    },
+    "effective_batch_size": 16,
+    "elapsed_seconds": 114.36826034599653
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.017616579777314543,
+    "validation": {
+      "evaluable_claims": 96,
+      "Recall@1": 0.6796875,
+      "Recall@3": 0.8324652777777777,
+      "Recall@5": 0.875,
+      "Recall@10": 0.9270833333333334,
+      "Recall@20": 0.9375,
+      "Hit@10": 0.9270833333333334,
+      "MRR@10": 0.7891617063492063,
+      "nDCG@10": 0.819418026303695
+    },
+    "effective_batch_size": 16,
+    "elapsed_seconds": 171.33266171699506
+  }
+]

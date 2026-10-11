@@ -1,0 +1,26 @@
+[
+  {
+    "left": "bm25_title_abstract",
+    "right": "hybrid_reranked",
+    "metric": "MRR@10",
+    "mean_difference": -0.08333333333333333,
+    "percentile_95_ci": [
+      -0.25,
+      0.0
+    ],
+    "resamples": 2000,
+    "interpretation": "Evaluation-claim sampling uncertainty; not between-training-seed variance"
+  },
+  {
+    "left": "dense_random",
+    "right": "dense_hard",
+    "metric": "MRR@10",
+    "mean_difference": 0.0,
+    "percentile_95_ci": [
+      0.0,
+      0.0
+    ],
+    "resamples": 2000,
+    "interpretation": "Evaluation-claim sampling uncertainty; not between-training-seed variance"
+  }
+]
