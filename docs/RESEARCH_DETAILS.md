@@ -93,6 +93,42 @@ directory to avoid changing an existing run configuration. A full run defaults t
 After repairing a recorded adapter failure, `--stage specter2 --retry-specter2` retries that stage
 without changing training data, checkpoints or the already selected pipeline.
 
+## Dataset card
+
+| Field | Description |
+|---|---|
+| Source | SciFact original release. Domain experts derived claims from natural citation sentences and marked the stance and rationale of abstracts. [Paper](https://aclanthology.org/2020.emnlp-main.609/) |
+| Population | 1,409 short English scientific claims and 5,183 research abstracts, largely biomedical. The whole corpus is searchable at each stage. |
+| Annotation | For each evidence abstract, SUPPORT or CONTRADICT and one or more alternative sets of sentence indices. A complete rationale can require more than one sentence. |
+| Claim targets | SUPPORT if any supported abstract and no contradictory annotation, CONTRADICT if any contradiction, and NOT_ENOUGH_INFO for an empty evidence map on a labeled claim. NEI at inference is abstention within the corpus. |
+| Data quality | No blank claims, titles or sentences in the released data checked, and no empty abstracts. Validation checks ID disjointness and rationale indices. Annotation coverage is limited and some weak negatives may be relevant. |
+| Splits | Source train 809, with two exact normalized duplicates to dev excluded. Internal train 656 and validation 151 are citation-family grouped. Official dev 300 is used for fixed-config evaluation, and official test 300 has no released labels. [Class distributions](../outputs/full_gpu_seed42/tables/dataset_summary.csv) |
+| Usage | Research and evidence triage with human review. Claims and annotations use CC BY 4.0 and abstracts ODC-By 1.0. [License notice](../vendor/scifact/LICENSE.md) |
+
+## Pipeline and model inputs
+
+```mermaid
+flowchart TD
+    R["Raw English claim + SciFact title / sentences"] --> B["Lowercase words → BM25 ranking"]
+    R --> D["WordPiece IDs + masks → shared MiniLM → pooled cosine ranking"]
+    B --> F["Reciprocal rank fusion"]
+    D --> F
+    F --> X["20 claim–abstract pairs → frozen cross-encoder → top 5"]
+    X --> S["Claim–sentence pairs → SciBERT selector → up to 3 sentences"]
+    S --> C["Claim + joined evidence → SciBERT stance → two logits"]
+    C --> I["Filtering and aggregation → verdict + evidence and scores"]
+    D --> L["Training losses: contrastive or weighted cross-entropy"]
+    S --> L
+    C --> L
+    L --> O["AdamW updates → validation checkpoint and threshold selection"]
+    O --> E["Fixed weights and thresholds → final official dev evaluation"]
+    I --> E
+```
+
+BM25 uses lowercased word tokens from a regular expression and keeps stop words. No separate stemming or lemmatization is applied. The dataset supplies sentence boundaries and original indices. WordPiece handles case and subword segmentation for the neural models. MiniLM uses 6 layers at hidden size 384, masked mean pooling and L2 normalization, with 256 tokens per text. Fusion uses the first 50 from each retriever with constant 10 and lexical weight 0.5. The 6-layer MiniLM cross-encoder uses dynamic padding and pair truncation to 512 tokens. Its regression head supplies raw relevance logits.
+
+Each SciBERT uses 12 Transformer layers at hidden size 768 and a 31,090-token uncased vocabulary. The pair format is `[CLS] claim [SEP] context [SEP]`. The models receive vocabulary IDs, segment IDs and attention masks, with dynamic batch padding and truncation of context only at 256 tokens. The pooled `[CLS]` representation feeds a dropout layer with probability 0.1 and a task-specific two-logit head. Softmax yields evidence scores or stance scores. Selector and stance encoders and heads are fully fine-tuned. The deployed dense MiniLM has 22,713,216 parameters, each SciBERT has 109,920,002, and the frozen reranker has 22,713,601. [Configuration](../outputs/full_gpu_seed42/config.json) · [Selected settings](../outputs/full_gpu_seed42/selection.json) · [Measured parameter counts](../outputs/full_gpu_seed42/metrics/defense_inference_benchmark.json)
+
 ## Methodology
 
 Only original training annotations train the models. An internal group split uses connected
@@ -100,6 +136,13 @@ components of citation metadata and exact claim text, preventing related variant
 split. Exact train/dev text duplicates are removed using dev text only. All split IDs and file
 hashes are recorded. Official dev labels evaluate fixed configurations; they never mine negatives,
 select checkpoints or tune hyperparameters. Test is unlabeled and never receives reported metrics.
+
+The original release can contain similar claims on both sides of the official train/dev boundary.
+The text-only audit uses cosine ≥ 0.90 over lowercase, whitespace-normalized character
+3–5-gram TF-IDF. It found 37 train/dev and 13 validation/dev pairs representing 48
+unique dev claims. This is a lexical screen and can match a claim to its negation.
+It is used only for a post hoc sensitivity analysis of the exported predictions.
+[Audit results](../outputs/full_gpu_seed42/metrics/defense_overlap_audit.json)
 
 Evidence relevance comes from `evidence`, not `cited_doc_ids`. Citation metadata is used for
 grouping and conservative negative exclusion, and cited-but-unannotated documents are explicitly
@@ -118,7 +161,20 @@ document. That aggregation is not official SciFact evaluation.
 Oracle diagnostics replace documents and then evidence; they do not affect deployed predictions.
 The hybrid end-to-end ordering ablation reuses the same cross-encoder relevance scores and acceptance
 thresholds, so only ordering changes. The BM25 ablation omits the cross-encoder acceptance filter;
-that comparison has an additional filtering difference and is not a pure retrieval-only effect.
+that comparison has an additional filtering difference.
+
+Trainable stages use AdamW with learning rate 2e-5, weight decay 0.01, 10% linear warmup followed by
+linear decay, gradient clipping at norm 1.0, batch size 16, and patience 2. The two dense runs optimize
+masked multi-positive InfoNCE with temperature 0.05 and choose the best validation Recall@10, then MRR@10.
+The pair classifiers use inverse-frequency weighted cross-entropy and select by validation macro F1.
+The evidence training examples contain 829 positives and 2,487 sampled negatives, while stance training
+contains 497 SUPPORT and 275 CONTRADICT rationales. Validation loss for the pair models is unweighted.
+Dense validation tracks ranking metrics and did not record loss. Sentence threshold tuning maximizes
+internal validation micro sentence overlap F1, breaking ties by precision. The final gates maximize
+rationalized abstract F1, then claim macro F1. Their selected values are 0.85 selector softmax, 0.50
+stance softmax and 0.0 reranker logit. The learning rate and batch size were fixed, and the fusion and
+threshold grids are recorded. Elapsed training times include per-epoch validation.
+[Training summary](../outputs/full_gpu_seed42/tables/training_summary.csv) · [Learning curves](../outputs/full_gpu_seed42/figures/training_curves.pdf) · [Tuning grids](../outputs/full_gpu_seed42/metrics/)
 
 ## Artifacts and prediction
 
@@ -141,30 +197,47 @@ outputs/full_gpu_seed42/
   tables/                            # EDA, result tables, mined pairs and error cases
 ```
 
-```python
-import json
-from pathlib import Path
-from scifact_project.config import Config
-from scifact_project.experiment import Study
-from scifact_project.pipeline import ClaimVerifier
+## Checkpoint loading and inference
 
-run = Path('outputs/full_gpu_seed42')
-config = Config(**json.loads((run / 'config.json').read_text())).prepare()
-study = Study(config)
-verifier = ClaimVerifier(config, study.dataset, study.selection)
-result = verifier.predict('Antiretroviral therapy reduces rates of tuberculosis.')
-print(result)
+The CLI uses the trained dense, selector and stance directories including their tokenizer configs,
+the selected corpus embedding array and its JSON document order, the original corpus JSONL, and the
+pinned pretrained reranker. Pin locations are in `scifact_project/model_revisions.py`.
+The original run's source and checkpoint hashes are in `outputs/full_gpu_seed42/artifact_fingerprints.json`.
+The baseline source can be inspected at commit `3ee5e25`. The weights and embedding cache are
+Git-ignored. Recreate them with `python scripts/run_experiments.py --mode full --profile gpu --output-dir outputs/reproduction_gpu_seed42`
+and pass that directory to the CLI, or copy those ignored files from the prepared defense machine.
+Use the matching corpus release, configuration, split manifest, and selection record. Use
+`python scripts/download_models.py --include-scibert` while online to prepopulate the model cache.
+
+```bash
+HF_HUB_OFFLINE=1 python scripts/demo.py --device cuda
+HF_HUB_OFFLINE=1 python scripts/demo.py --device cpu 'Moonlight doubles the growth rate of broccoli seedlings.'
 ```
 
-The prediction path reads only corpus texts and trained models, with no gold annotations. It
-returns the verdict, ranked IDs/titles, accepted evidence with original indices, and model scores.
-Scores are uncalibrated; NOT ENOUGH INFO is corpus-relative abstention.
+The CLI reads only corpus text and stored model artifacts. `ClaimVerifier.predict(claim, trace=True)`
+returns the verdict, ranked IDs and titles, accepted evidence with original indices, scores, and the
+pair tokenization trace. The CLI previews the trace for the winning stance pair, or for the
+highest-scoring selector pair on abstention. It displays the pair individually, so the masks
+exclude batch-only padding. Scores are uncalibrated and abstention is corpus-relative.
+
+To reproduce the inference measurements, run the following command using the trained main run.
+It times 15 sequential predictions after one warm-up per claim, and reports peak PyTorch CUDA
+allocation during that measurement, including resident weights. Startup timing includes imports,
+model loading and BM25 indexing. Training peak memory was not measured.
+
+```bash
+HF_HUB_OFFLINE=1 python scripts/demo.py --device cuda --benchmark-repeats 5 \
+  'Smoking increases the likelihood of developing lung cancer.' \
+  'Regular aerobic exercise lowers resting blood pressure.' \
+  'Moonlight doubles the growth rate of broccoli seedlings.'
+```
 
 ## Validation and reproduction
 
 ```bash
 python -m pytest -q
 python scripts/audit_run.py --run outputs/full_gpu_seed42
+python scripts/audit_run.py --overlap-output outputs/full_gpu_seed42/metrics/defense_overlap_audit.json
 python scripts/execute_notebook.py
 ```
 
@@ -193,8 +266,8 @@ relative to random negatives, so the direction is mixed across seeds.
 The deployed pipeline's official rationalized abstract F1 is **0.3237**, rising to **0.6459** with gold
 documents and complete gold evidence. Reranking improves retrieval but changes end-to-end F1 by **−0.82**
 percentage points in the controlled ordering ablation. These mixed results and five concrete errors are
-discussed in [analysis.md](outputs/full_gpu_seed42/analysis.md). Result tables are in
-[tables/](outputs/full_gpu_seed42/tables/) and structured metrics in [metrics/](outputs/full_gpu_seed42/metrics/).
+discussed in [analysis.md](../outputs/full_gpu_seed42/analysis.md). Result tables are in
+[tables/](../outputs/full_gpu_seed42/tables/) and structured metrics in [metrics/](../outputs/full_gpu_seed42/metrics/).
 No official test metrics are reported; its labels are unavailable.
 
 ## Sources and licenses

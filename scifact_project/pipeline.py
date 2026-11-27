@@ -5,7 +5,7 @@ import gc
 import hashlib
 import json
 import numpy as np
-from .data import document_text, gold_docs, gold_sentences, LABELS, write_json
+from .data import document_text, gold_docs, gold_sentences, tokens, LABELS, write_json
 from .metrics import sentence_metrics, pipeline_metrics, classification_metrics
 from .retrieval import adaptive_encode, load_dense, BM25Retriever, rrf_rankings
 from .training import PairClassifier
@@ -48,6 +48,10 @@ def select_sentences(scores, threshold, budget=3):
     # Order by evidence score. Original indices retained; official scorer uses first 3 in this order.
     order = np.argsort(-np.asarray(scores), kind="stable")[:budget]
     return [int(i) for i in order if scores[i] >= threshold]
+
+
+def winning_document(documents):
+    return max(documents, key=lambda d: (d['aggregation_score'], -d['doc_id']), default=None)
 
 
 def selected_map(claims, rankings, score_maps, threshold, config, oracle=False, force_budget=False):
@@ -134,7 +138,7 @@ def compose_predictions(dataset, claims, rankings, sentence_scores, stance_score
                             "retrieval_score": retrieval_score,
                             "evidence": [{"index": i, "text": dataset.corpus[doc]["abstract"][i]} for i in indices],
                             "aggregation_score": float(selection_confidence * stance_confidence)})
-        chosen = max(details, key=lambda d: (d["aggregation_score"], -d["doc_id"])) if details else None
+        chosen = winning_document(details)
         output[cid] = {"id": c["id"], "verdict": chosen["label"] if chosen else "NOT_ENOUGH_INFO",
                        "evidence": evidence, "documents": details,
                        "ranked_documents": [{"doc_id": int(d), "title": dataset.corpus[int(d)]["title"]}
@@ -187,7 +191,7 @@ class ClaimVerifier:
         self.reranker = CrossEncoder(config.reranker_model, device=config.device, max_length=config.rerank_length,
                                      revision=revision(config.reranker_model))
 
-    def predict(self, claim):
+    def predict(self, claim, *, trace=False):
         config, dataset = self.config, self.dataset
         bm_ids, _ = self.bm25.rank(claim, 50)
         query = adaptive_encode(self.dense, [claim], config.inference_batch)[0]
@@ -215,9 +219,9 @@ class ClaimVerifier:
         rows = [{"claim": claim, "text": sentence, "doc_id": doc, "index": i}
                 for doc in rankings["-1"][:config.verification_documents]
                 for i, sentence in enumerate(dataset.corpus[doc]["abstract"])]
-        values = self.selector.probabilities(rows)[:, 1]
+        evidence_probabilities = self.selector.probabilities(rows)[:, 1]
         sentence_scores = {"-1": {str(d): [] for d in rankings["-1"][:config.verification_documents]}}
-        for row, value in zip(rows, values):
+        for row, value in zip(rows, evidence_probabilities):
             sentence_scores["-1"][str(row["doc_id"])].append(float(value))
         # Lightweight context objects contain claim text only, never gold annotations.
         cs = [{"id": -1, "claim": claim}]
@@ -231,6 +235,30 @@ class ClaimVerifier:
                 keys.append((doc, str(len(indices))))
         for (doc, size), probability in zip(keys, self.stance.probabilities(stance_rows)):
             stance_scores["-1"][doc] = {size: probability.tolist()}
-        return compose_predictions(dataset, cs, rankings, sentence_scores, stance_scores, config,
-                                   self.selection["sentence_threshold"], self.selection["stance_threshold"],
-                                   self.selection["document_threshold"], retrieval_scores)["-1"]
+        result = compose_predictions(dataset, cs, rankings, sentence_scores, stance_scores, config,
+                                     self.selection["sentence_threshold"], self.selection["stance_threshold"],
+                                     self.selection["document_threshold"], retrieval_scores)["-1"]
+        if trace:
+            classifier, head, example = self.selector, 'evidence selector', None
+            winner = winning_document(result['documents'])
+            if winner:
+                evidence = sorted(winner['evidence'], key=lambda s: s['index'])
+                classifier, head = self.stance, 'stance'
+                example = {'claim': claim, 'text': ' '.join(s['text'] for s in evidence)}
+            elif rows:
+                example = rows[int(np.argmax(evidence_probabilities))]
+            encoding = {}
+            if example:
+                encoding = {key: batch[0].tolist() for key, batch in classifier.encode([example]).items()}
+            result['trace'] = {
+                'bm25_tokens': tokens(claim), 'pair_head': head, 'pair_text': example['text'] if example else None,
+                'wordpieces': classifier.tokenizer.convert_ids_to_tokens(encoding['input_ids']) if encoding else [],
+                'encoding': encoding,
+                'candidates': [
+                    {'doc_id': doc, 'document_logit': score,
+                     'best_evidence_score': max(sentence_scores['-1'][str(doc)], default=None),
+                     'stance_probabilities': next(iter(stance_scores['-1'].get(str(doc), {}).values()), None)}
+                    for doc, score in zip(rankings['-1'][:config.verification_documents], retrieval_scores['-1'])
+                ],
+            }
+        return result

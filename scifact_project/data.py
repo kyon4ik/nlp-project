@@ -102,12 +102,28 @@ def ensure_data(data_dir):
         raise ValueError("data_dir must be the archive's data directory, e.g. data/raw/data")
 
 
-class Dataset:
+class Corpus:
+    """An ordered collection of abstracts without claim annotations."""
+
+    def __init__(self, path, document_ids=None):
+        documents = read_jsonl(path)
+        if document_ids is not None:
+            by_id = {int(d['doc_id']): d for d in documents}
+            documents = [by_id[doc_id] for doc_id in document_ids]
+        self._set_documents(documents)
+
+    def _set_documents(self, documents):
+        self.documents = documents
+        self.corpus = {int(d['doc_id']): d for d in self.documents}
+        self.doc_ids = np.array([d['doc_id'] for d in self.documents], dtype=np.int64)
+        self.doc_index = {int(doc): i for i, doc in enumerate(self.doc_ids)}
+
+
+class Dataset(Corpus):
     def __init__(self, config):
         ensure_data(config.data_dir)
         root = Path(config.data_dir)
-        self.documents = read_jsonl(root / "corpus.jsonl")
-        self.corpus = {int(d["doc_id"]): d for d in self.documents}
+        super().__init__(root / "corpus.jsonl")
         self.original_train = read_jsonl(root / "claims_train.jsonl")
         self.dev = read_jsonl(root / "claims_dev.jsonl")
         self.test = read_jsonl(root / "claims_test.jsonl")
@@ -144,10 +160,7 @@ class Dataset:
             self.dev = self.dev[:16]
             needed = set().union(*(gold_docs(c) for c in self.train + self.validation + self.dev))
             chosen = needed | {d["doc_id"] for d in self.documents[:128]}
-            self.documents = [d for d in self.documents if d["doc_id"] in chosen]
-            self.corpus = {d["doc_id"]: d for d in self.documents}
-        self.doc_ids = np.array([d["doc_id"] for d in self.documents], dtype=np.int64)
-        self.doc_index = {int(doc): i for i, doc in enumerate(self.doc_ids)}
+            self._set_documents([d for d in self.documents if d["doc_id"] in chosen])
         manifest_path = config.out / 'split_manifest.json'
         if manifest_path.exists():
             previous = json.loads(manifest_path.read_text())

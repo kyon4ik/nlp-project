@@ -125,6 +125,11 @@ class PairClassifier:
         self.tokenizer = AutoTokenizer.from_pretrained(source, revision=revision(source))
         self.model = AutoModelForSequenceClassification.from_pretrained(source, num_labels=2, revision=revision(source)).to(config.device)
 
+    def encode(self, rows):
+        return self.tokenizer([r['claim'] for r in rows], [r['text'] for r in rows],
+                              padding=True, truncation='only_second', max_length=self.config.pair_length,
+                              return_tensors='pt')
+
     @torch.inference_mode()
     def probabilities(self, rows):
         if not rows:
@@ -135,9 +140,7 @@ class PairClassifier:
         while position < len(rows):
             try:
                 chunk = rows[position:position + batch]
-                encoded = self.tokenizer([r["claim"] for r in chunk], [r["text"] for r in chunk],
-                                         padding=True, truncation="only_second", max_length=self.config.pair_length,
-                                         return_tensors="pt").to(self.config.device)
+                encoded = self.encode(chunk).to(self.config.device)
                 outputs.append(self.model(**encoded).logits.float().softmax(-1).cpu().numpy())
                 position += batch
             except torch.cuda.OutOfMemoryError:

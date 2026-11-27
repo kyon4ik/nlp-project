@@ -1,0 +1,23 @@
+{
+  "scope": "Sequential warm claim-to-verdict and evidence, one claim at a time, without display or token tracing",
+  "device": "NVIDIA GeForce GTX 1660 Ti",
+  "torch": "2.13.0+cu130",
+  "load_seconds": 9.125549525999986,
+  "claims": [
+    "Smoking increases the likelihood of developing lung cancer.",
+    "Regular aerobic exercise lowers resting blood pressure.",
+    "Moonlight doubles the growth rate of broccoli seedlings."
+  ],
+  "warmup_predictions": 3,
+  "timed_predictions": 15,
+  "inference_batch_limit": 64,
+  "median_latency_ms": 987.4341419999837,
+  "throughput_claims_per_second": 0.9740543348196803,
+  "peak_torch_cuda_allocated_mib": 1330.591796875,
+  "parameters": {
+    "dense": 22713216,
+    "reranker": 22713601,
+    "selector": 109920002,
+    "stance": 109920002
+  }
+}
